@@ -1,0 +1,11 @@
+file_name,fecha,folio,rfc_emisor,estacion,moneda,monto_total,valid_total,producto,cantidad_litros,precio_unitario,notes
+1.png,2025-09-24 11:59,1278567,,G500 / issuer partially unreadable,MXN,1669.13,true,Regular,71.707,,Header/RFC and unit price are partially unreadable; bank voucher also visible; verify against original.
+2.png,2025-02-16 22:53,6758233,,Servicio Los Arcos Poniente S.A. de C.V.,MXN,1000.14,true,Magna,45.315,22.09,RFC partially unreadable.
+3.png,2025-02-22 15:24:30,1433069,SGA130705N4A,Servicio Galaico S.A. de C.V.,MXN,8000.02,true,GDIESEL 34006,311.77,25.66,Clear single G500 fuel ticket.
+4.png,2025-02-22,"1433069;1433070",SGA130705N4A,Servicio Galaico S.A. de C.V.,MXN,11500.02,true,GDIESEL 34006,448.68,25.66,Image contains two fuel tickets plus bank voucher; total is 8000.02 + 3500.00; voucher appears to show 11500.00.
+5.png,2025-03-04,"OPER 120; OPER 121",,Santander/Getnet payment vouchers,MXN,,false,,,,Image shows payment vouchers/declined transactions only; no fuel receipt total visible.
+6.jpg,2025-06-04 08:14,4831248,GSU961021BP3,Gasolinera del Sur S.A. de C.V.,MXN,1388.06,true,Magna,57.660,23.99,Clear fuel ticket.
+7.jpg,2025-06-04 11:52,GT6693,GTE941124DN6,Gasolinera Teoloyucan S.A. de C.V.,MXN,7000.00,true,Diesel UltrabaJo,273.544353263,25.59,Payment voucher also visible.
+8.jpg,2025-05-27 16:44:40,007059753,,SERV Las Americas / Citibanamex payment voucher,MXN,1000.00,false,,,,Payment voucher only; no fiscal fuel receipt/RFC visible.
+9.jpg,2025-05-28 16:38:10,375212,SRO990503BQ3,Servicio California,MXN,500.00,true,Premium 32012,20.105,24.87,Station name partially obscured by finger; sequence used as folio.
+10.jpg,2025-06-04 11:11:17,598766,,G500 / issuer partially unreadable,MXN,1246.68,true,GDIESEL,46.5098,26.79,Header/RFC partially unreadable.

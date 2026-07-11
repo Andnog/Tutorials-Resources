@@ -47,7 +47,7 @@ Edita `.env` localmente:
 ```bash
 GOOGLE_API_KEY=tu_llave_aqui
 LMSTUDIO_BASE_URL=http://localhost:1234/v1
-DEFAULT_GEMINI_MODEL=gemini-2.0-flash
+DEFAULT_GEMINI_MODEL=gemini-3.1-flash-lite
 DEFAULT_LMSTUDIO_MODEL=local-model
 ```
 
@@ -64,29 +64,17 @@ Si el proveedor responde HTTP 429, el cliente espera un minuto y reintenta una v
 
 ## Datos de tickets
 
-1. Coloca las 10 imágenes de evaluación final en:
+El repositorio **ya incluye los datos de prueba del curso**, listos para correr todo sin preparar nada:
 
 ```text
-data/images_eval/
-```
-
-2. Coloca las imágenes de experimentación/clase en:
-
-```text
-data/images_test/
-```
-
-3. Llena o verifica los valores esperados en:
-
-```text
+data/images_eval/    # 10 imágenes para la evaluación final
+data/images_test/    # 10 imágenes para experimentación en clase
 data/labels/expected_receipts.csv       # alias usado por los notebooks; apunta al set de evaluación
-data/labels/expected_receipts_eval.csv  # etiquetas de la evaluación final
+data/labels/expected_receipts_eval.csv  # etiquetas (ground truth) de la evaluación final
 data/labels/expected_receipts_test.csv  # etiquetas de experimentación
 ```
 
-Usa el nombre exacto del archivo de imagen en `file_name`. El notebook compara la salida del modelo contra este CSV.
-
-> **Importante:** las imágenes de tickets y los CSV de etiquetas pueden contener datos fiscales reales (RFC, folios, montos). Por eso el `.gitignore` los excluye del repositorio; cada quien usa sus propios datos localmente.
+Si quieres usar tus propios tickets: agrega las imágenes a la carpeta correspondiente y una fila por ticket en el CSV, usando el nombre exacto del archivo en `file_name` (mira `expected_receipts_example.csv` como plantilla). El notebook compara la salida del modelo contra ese CSV.
 
 ## Flujo de la clase
 

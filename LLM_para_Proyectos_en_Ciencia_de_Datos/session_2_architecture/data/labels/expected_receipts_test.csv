@@ -1,0 +1,11 @@
+file_name,fecha,folio,rfc_emisor,estacion,moneda,monto_total,valid_total,producto,cantidad_litros,precio_unitario,notes
+ticket_1.jpg,2025-06-03 22:06,1174049,SCC111213TG9,Servicio Gasolinero de la Costa S.A. de C.V.,MXN,1571.82,true,Magna,65.005,24.18,RFC/header partially unreadable.
+ticket_2.jpg,2025-06-09 17:46,530036,,,MXN,370.63,true,Premium,14.636,24.90,Folio/date/header are low confidence due distant image.
+ticket_3.jpg,2025-06-04 11:18,GT8691,GTE941124DN6,Gasolinera Teoloyucan S.A. de C.V.,MXN,5000.00,true,Diesel UltrabaJo,195.388,25.59,Quantity and unit price are difficult to read; total is visible.
+ticket_4.jpg,2025-06-04 11:52,GT6693,GTE941124DN6,Gasolinera Teoloyucan S.A. de C.V.,MXN,7000.00,true,Diesel UltrabaJo,273.544353263,25.59,Payment voucher also visible.
+ticket_5.jpg,2025-06-03 17:35:24,361841,ESD04101425A,Servicio del Desierto,MXN,1760.00,true,Diesel 34006,64.250,27.39,RFC appears as ESD041014...? verify exact RFC.
+ticket_6.jpg,2025-05-28 12:07,,,"Servicio California / Gasolineras Los Olivos",MXN,1500.00,true,,,,Image includes BBVA voucher in front of receipt; fiscal fields mostly obscured.
+ticket_7.jpg,2025-05-22 11:44,,,,MXN,1450,true,Magna,,24.03,Distant/overexposed ticket; total and folio are low confidence.
+ticket_8.jpg,2025-05-10 18:24:06,139658400,,OXXO GAS Estacion Colinas de Lagos,MXN,400.00,true,Magna,16.674,23.99,RFC not visible in image crop.
+ticket_9.jpg,2025-06-04 10:45:45,3470834,IPO9011085S6,Inmuebles Porba S.A. de C.V.,MXN,3500.00,true,Diesel 34006,145.004,23.98,Clear fuel ticket.
+ticket_10.jpg,,,,,MXN,1160.41,true,Magna,49.400,23.49,Only lower half is readable; date/folio/RFC/header are hidden.

@@ -1,4 +1,9 @@
-"""Build the six paired course notebooks from a single source of truth."""
+"""Build the six paired course notebooks from a single source of truth.
+
+ADVERTENCIA: los notebooks 01 y 02 evolucionaron a mano después de generarse y este
+script YA NO refleja su contenido actual — correrlo los sobrescribiría. Antes de
+regenerar, actualiza aquí las celdas o regenera solo el notebook que sí controlas (03).
+"""
 
 from __future__ import annotations
 
@@ -426,12 +431,12 @@ def receipt_project(solved: bool) -> dict:
         import pandas as pd
         from IPython.display import display
 
-        from receipt_validation.clients import ask_model, parse_json_content
+        from receipt_validation.clients import ask_model, ask_model_raw, parse_json_content
         from receipt_validation.cost import estimate_cost
         from receipt_validation.evaluators import evaluate_receipt, summarize_results
         from receipt_validation.experiments import run_comparison, save_results
         from receipt_validation.io import load_expected_receipts, load_receipt_images
-        from receipt_validation.prompts import GENERIC_PROMPT, build_extraction_prompt
+        from receipt_validation.prompts import GENERIC_PROMPT, QUESTIONS_PROMPT, build_extraction_prompt
         from receipt_validation.schemas import ReceiptExtraction
 
         paths = settings["paths"]
@@ -464,20 +469,135 @@ def receipt_project(solved: bool) -> dict:
         md("""
         ## 2. Experimentos de prompt
 
-        Comparamos una pregunta genérica, extracción zero-shot estructurada y few-shot. Solo cambia el prompt;
-        imagen, modelo y evaluación permanecen constantes.
+        Comparamos cuatro variantes: pregunta genérica, extracción zero-shot estructurada, few-shot y
+        preguntas guiadas. Solo cambia el prompt; imagen, modelo y evaluación permanecen constantes.
         """),
         solution_or_todo(solved, """
         prompt_variants = {
             "generic": GENERIC_PROMPT,
             "structured_zero_shot": build_extraction_prompt(use_few_shot=False),
             "structured_few_shot": build_extraction_prompt(use_few_shot=True),
+            "structured_questions": QUESTIONS_PROMPT,
         }
         for name, prompt in prompt_variants.items():
             print(name, "->", len(prompt), "characters")
         """, """
-        # TODO: Create generic, structured zero-shot, and structured few-shot variants.
+        # TODO: Create four variants: generic, structured zero-shot, structured few-shot,
+        # and structured questions (QUESTIONS_PROMPT).
         prompt_variants = {}
+        """),
+        md("""
+        ### Demo: evaluar los prompts con 5 tickets (modo crudo, sin esquema forzado)
+
+        Antes de la matriz completa, evaluamos las cuatro variantes de prompt con 5 tickets para **ver**
+        cuánto importa el prompt cuando nada más lo rescata.
+
+        **Clave:** esta demo usa `ask_model_raw` — **sin** salida estructurada (`responseJsonSchema` /
+        `response_format`) y **sin** el system prompt de extracción. El prompt de usuario es lo único que
+        guía al modelo. Con el prompt genérico el modelo tiende a inventar formatos o devolver JSON
+        malformado; con los estructurados, las reglas y el cierre "return only JSON" garantizan salida
+        parseable. (La matriz completa y el dashboard sí usan esquema forzado, como en producción.)
+
+        Escalera de prompts:
+
+        | Variante | Qué agrega |
+        |---|---|
+        | `generic` | Solo campos + "respond in JSON" |
+        | `structured_zero_shot` | + reglas de formato, null, reglas de negocio |
+        | `structured_few_shot` | + ejemplo de salida |
+        | `structured_questions` | Preguntas numeradas por campo → cierre exigiendo un solo JSON |
+
+        - `DEMO_USE_CLOUD = False` → modelo local (LM Studio). `True` → Gemini en la nube.
+        - En la nube, el cliente limita automáticamente las peticiones por minuto:
+          **15/min** para `gemini-3.1-flash-lite` y **5/min** para cualquier otro modelo
+          (5 tickets × 4 prompts = 20 llamadas, ~1.5 min con flash-lite; más con otro modelo).
+        """),
+        solution_or_todo(solved, """
+        RUN_PROMPT_DEMO = False  # Activar solo con llaves/servidor listos.
+        DEMO_USE_CLOUD = False   # False = LM Studio local | True = Gemini en la nube
+        DEMO_TICKETS = 5
+
+        DEMO_BACKEND = "gemini" if DEMO_USE_CLOUD else "lmstudio"
+        DEMO_MODEL = (
+            settings["default_gemini_model"] if DEMO_USE_CLOUD else settings["default_lmstudio_model"]
+        )
+
+        if DEMO_USE_CLOUD:
+            from receipt_validation.clients import gemini_rate_limit
+            print(f"Rate limit para {DEMO_MODEL}: {gemini_rate_limit(DEMO_MODEL)} peticiones/minuto")
+
+        demo_results = []
+        if RUN_PROMPT_DEMO:
+            demo_rows = expected.head(DEMO_TICKETS)
+            total_calls = len(demo_rows) * len(prompt_variants)
+            call_number = 0
+            for _, row in demo_rows.iterrows():
+                image_path = images_dir / row["file_name"]
+                for variant_name, prompt in prompt_variants.items():
+                    call_number += 1
+                    print(f"[{call_number:02d}/{total_calls:02d}] {row['file_name']} · {variant_name}")
+                    record = {
+                        "prompt": variant_name,
+                        "file_name": row["file_name"],
+                        "accuracy": 0.0,
+                        "passed": False,
+                        "latency_seconds": None,
+                        "error": None,
+                    }
+                    try:
+                        response = ask_model_raw(
+                            backend=DEMO_BACKEND,
+                            prompt=prompt,
+                            image_path=image_path,
+                            model=DEMO_MODEL,
+                            settings=settings,
+                        )
+                        record["latency_seconds"] = round(response.latency_seconds, 2)
+                        extraction = ReceiptExtraction.model_validate(
+                            parse_json_content(response.content)
+                        )
+                        evaluation = evaluate_receipt(extraction, row)
+                        record["accuracy"] = evaluation["accuracy"]
+                        record["passed"] = evaluation["passed"]
+                    except Exception as exc:
+                        record["error"] = f"{type(exc).__name__}: {exc}"[:150]
+                    demo_results.append(record)
+        else:
+            print("Demo disabled. Set RUN_PROMPT_DEMO=True when ready.")
+
+        if demo_results:
+            demo_frame = pd.DataFrame(demo_results)
+            pivot = demo_frame.pivot_table(index="file_name", columns="prompt", values="accuracy")
+            display(pivot.style.format("{:.1%}").background_gradient(cmap="YlGn", axis=None))
+            display(
+                demo_frame.groupby("prompt", as_index=False)
+                .agg(
+                    accuracy=("accuracy", "mean"),
+                    tickets_ok=("passed", "sum"),
+                    avg_latency_seconds=("latency_seconds", "mean"),
+                    errores=("error", lambda column: column.notna().sum()),
+                )
+                .sort_values("accuracy", ascending=False)
+            )
+        """, """
+        RUN_PROMPT_DEMO = False  # Activar solo con llaves/servidor listos.
+        DEMO_USE_CLOUD = False   # False = LM Studio local | True = Gemini en la nube
+        DEMO_TICKETS = 5
+
+        DEMO_BACKEND = "gemini" if DEMO_USE_CLOUD else "lmstudio"
+        DEMO_MODEL = (
+            settings["default_gemini_model"] if DEMO_USE_CLOUD else settings["default_lmstudio_model"]
+        )
+
+        # TODO 1: Para cada uno de los primeros DEMO_TICKETS tickets y cada variante de
+        #   prompt_variants, llama ask_model_raw (SIN esquema forzado) con la imagen del ticket.
+        # TODO 2: Intenta parsear la respuesta con parse_json_content y valida con
+        #   ReceiptExtraction.model_validate; si falla, registra accuracy 0.0 y el error.
+        # TODO 3: Evalúa los casos exitosos con evaluate_receipt y guarda por fila:
+        #   prompt, file_name, accuracy, passed, latency_seconds, error.
+        # TODO 4: Construye un DataFrame, haz un pivot de accuracy (ticket x prompt)
+        #   y una tabla resumen por prompt ordenada por accuracy.
+        demo_results = []
         """),
         md("""
         ## 3. Un contrato para todos los modelos

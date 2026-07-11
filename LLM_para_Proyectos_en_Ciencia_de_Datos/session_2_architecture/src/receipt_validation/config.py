@@ -173,7 +173,7 @@ def load_settings(project_root: Path | str) -> dict[str, Any]:
         "gemini_base_url": os.getenv(
             "GEMINI_BASE_URL", "https://generativelanguage.googleapis.com/v1beta"
         ),
-        "default_gemini_model": os.getenv("DEFAULT_GEMINI_MODEL", "gemini-2.0-flash"),
+        "default_gemini_model": os.getenv("DEFAULT_GEMINI_MODEL", "gemini-3.1-flash-lite"),
         "default_lmstudio_model": os.getenv("DEFAULT_LMSTUDIO_MODEL", "local-model"),
         "tesseract_cmd": os.getenv("TESSERACT_CMD"),
     }
