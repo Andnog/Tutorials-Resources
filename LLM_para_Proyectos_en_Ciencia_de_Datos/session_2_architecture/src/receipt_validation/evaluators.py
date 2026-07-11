@@ -2,12 +2,15 @@
 
 from __future__ import annotations
 
+import re
 from math import isclose
 from typing import Any
 
 import pandas as pd
 
 from receipt_validation.schemas import ReceiptExtraction
+
+_DATE_PATTERN = re.compile(r"\d{4}-\d{2}-\d{2}")
 
 
 def _normalize_text(value: Any) -> str:
@@ -21,6 +24,20 @@ def _matches_text(actual: Any, expected: Any) -> bool:
     if not expected_text:
         return True
     return _normalize_text(actual) == expected_text
+
+
+def _matches_date(actual: Any, expected: Any) -> bool:
+    """Compare dates ignoring the time portion when both sides contain YYYY-MM-DD."""
+
+    expected_text = _normalize_text(expected)
+    if not expected_text:
+        return True
+    actual_text = _normalize_text(actual)
+    expected_date = _DATE_PATTERN.search(expected_text)
+    actual_date = _DATE_PATTERN.search(actual_text)
+    if expected_date and actual_date:
+        return expected_date.group() == actual_date.group()
+    return actual_text == expected_text
 
 
 def _matches_amount(actual: float | None, expected: Any, tolerance: float = 0.05) -> bool:
@@ -39,7 +56,7 @@ def evaluate_receipt(
     """Compare one extraction against one row of ground truth."""
 
     checks = {
-        "fecha": _matches_text(extraction.fecha, expected_row.get("fecha")),
+        "fecha": _matches_date(extraction.fecha, expected_row.get("fecha")),
         "folio": _matches_text(extraction.folio, expected_row.get("folio")),
         "rfc_emisor": _matches_text(extraction.rfc_emisor, expected_row.get("rfc_emisor")),
         "estacion": _matches_text(extraction.estacion, expected_row.get("estacion")),
