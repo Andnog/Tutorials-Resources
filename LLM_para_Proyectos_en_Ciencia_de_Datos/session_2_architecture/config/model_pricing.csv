@@ -1,0 +1,19 @@
+model,backend,display_name,input_per_million,output_per_million,notes
+gemini-3.5-flash,gemini,Gemini 3.5 Flash,1.50,9.00,Flagship flash tier
+gemini-3.1-flash-lite,gemini,Gemini 3.1 Flash-Lite,0.25,1.50,Cheapest current tier; audio input costs 0.50
+gemini-3.1-pro-preview,gemini,Gemini 3.1 Pro Preview,2.00,12.00,Tier for prompts up to 200k tokens
+gemini-3-flash-preview,gemini,Gemini 3 Flash Preview,0.50,3.00,Preview model
+gemini-2.5-pro,gemini,Gemini 2.5 Pro,1.25,10.00,Tier for prompts up to 200k tokens
+gemini-2.5-flash,gemini,Gemini 2.5 Flash,0.30,2.50,
+gemini-2.5-flash-lite,gemini,Gemini 2.5 Flash-Lite,0.10,0.40,
+google/gemma-4-e2b,lmstudio,Gemma 4 E2B (local),0.00,0.00,Runs locally in LM Studio; vision
+google/gemma-4-12b,lmstudio,Gemma 4 12B (local),0.00,0.00,Runs locally in LM Studio; vision
+mistralai/ministral-3-3b,lmstudio,Ministral 3 3B (local),0.00,0.00,Runs locally in LM Studio; vision
+zai-org/glm-4.6v-flash,lmstudio,GLM 4.6V Flash (local),0.00,0.00,Runs locally in LM Studio; vision
+qwen/qwen3.5-9b,lmstudio,Qwen 3.5 9B (local),0.00,0.00,Runs locally in LM Studio; vision
+qwen/qwen3-vl-8b,lmstudio,Qwen 3 VL 8B (local),0.00,0.00,Runs locally in LM Studio; vision
+microsoft/phi-4-mini-reasoning,lmstudio,Phi-4 Mini Reasoning (local),0.00,0.00,Runs locally in LM Studio; text only
+phi-3-mini-4k-instruct,lmstudio,Phi-3 Mini 4K (local),0.00,0.00,Runs locally in LM Studio; text only
+gemma-2,lmstudio,Gemma 2 (local),0.00,0.00,Runs locally in LM Studio; text only
+gpt-oss-20b,lmstudio,GPT-OSS 20B (local),0.00,0.00,Runs locally in LM Studio; text only
+gemma-3-270m-it-mlx,lmstudio,Gemma 3 270M (local),0.00,0.00,Runs locally in LM Studio; text only

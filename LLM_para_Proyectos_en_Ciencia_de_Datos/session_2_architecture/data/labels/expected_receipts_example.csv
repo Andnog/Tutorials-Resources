@@ -1,0 +1,2 @@
+file_name,fecha,folio,rfc_emisor,estacion,moneda,monto_total,valid_total,producto,cantidad_litros,precio_unitario,notes
+ticket_ejemplo.jpg,2026-01-15 10:30,123456,ABC123456XY9,Gasolinera Ejemplo S.A. de C.V.,MXN,850.00,true,Magna,35.500,23.94,Fila de ejemplo con datos ficticios; reemplaza con tus propios tickets.

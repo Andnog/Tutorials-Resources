@@ -1,0 +1,48 @@
+# --- Secretos y entorno ---
+.env
+.env.*
+!.env.example
+.streamlit/secrets.toml
+
+# --- Python ---
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# --- uv / notebooks ---
+.uv-cache/
+.ipynb_checkpoints/
+
+# --- Datos con información fiscal o personal (tickets reales) ---
+data/raw_receipts/*
+!data/raw_receipts/.gitkeep
+data/images_eval/*
+!data/images_eval/.gitkeep
+data/images_test/*
+!data/images_test/.gitkeep
+data/audios/*
+!data/audios/.gitkeep
+data/labels/*.csv
+!data/labels/expected_receipts_example.csv
+
+# --- Salidas generadas por experimentos ---
+data/outputs/*
+!data/outputs/.gitkeep
+
+# --- Sistema operativo e IDE ---
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# --- Logs y artefactos locales ---
+*.log

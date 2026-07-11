@@ -1,0 +1,12 @@
+# Prices are examples per 1M tokens. Update before using cost numbers in production.
+currency: USD
+models:
+  gemini-2.0-flash:
+    input_per_million: 0.10
+    output_per_million: 0.40
+  gemini-2.5-pro:
+    input_per_million: 1.25
+    output_per_million: 10.00
+  local-model:
+    input_per_million: 0.00
+    output_per_million: 0.00
