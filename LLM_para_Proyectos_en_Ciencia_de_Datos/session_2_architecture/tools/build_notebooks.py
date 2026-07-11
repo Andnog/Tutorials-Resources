@@ -473,6 +473,8 @@ def receipt_project(solved: bool) -> dict:
         preguntas guiadas. Solo cambia el prompt; imagen, modelo y evaluación permanecen constantes.
         """),
         solution_or_todo(solved, """
+        from IPython.display import Markdown
+
         prompt_variants = {
             "generic": GENERIC_PROMPT,
             "structured_zero_shot": build_extraction_prompt(use_few_shot=False),
@@ -480,10 +482,13 @@ def receipt_project(solved: bool) -> dict:
             "structured_questions": QUESTIONS_PROMPT,
         }
         for name, prompt in prompt_variants.items():
-            print(name, "->", len(prompt), "characters")
+            display(Markdown(
+                f"#### `{name}` · {len(prompt)} caracteres\\n\\n```text\\n{prompt}\\n```\\n\\n---"
+            ))
         """, """
         # TODO: Create four variants: generic, structured zero-shot, structured few-shot,
         # and structured questions (QUESTIONS_PROMPT).
+        # Muestra cada prompt COMPLETO con formato (display + Markdown), no solo su longitud.
         prompt_variants = {}
         """),
         md("""
