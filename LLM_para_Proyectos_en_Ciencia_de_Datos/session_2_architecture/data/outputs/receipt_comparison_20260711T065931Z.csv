@@ -1,0 +1,41 @@
+run_id,created_at,dataset,file_name,pipeline,model,backend,prompt_variant,accuracy,passed,match_fecha,match_folio,match_rfc_emisor,match_estacion,match_moneda,match_monto_total,status,ocr_engine,ocr_latency_seconds,model_latency_seconds,latency_seconds,input_tokens,output_tokens,estimated_cost,extraction_json,ocr_text,error
+20260711T065931Z,2026-07-11T06:59:31.475754+00:00,test,ticket_1.jpg,llm_only,gemini-3.1-flash-lite,gemini,zero_shot,0.5,False,False,True,False,False,True,True,success,,0.0,1.6403881250007544,1.6403881250007544,1295,221,0.00065525,"{""fecha"": ""2025-06-03"", ""folio"": ""1174049"", ""rfc_emisor"": ""SGC111213TG9"", ""estacion"": ""SERVICIO GASOLINERO DE LA COSTA, S.A. DE"", ""moneda"": ""MXN"", ""monto_total"": 1571.82, ""productos"": [{""descripcion"": ""MAGNA"", ""cantidad_litros"": 65.005, ""precio_unitario"": 24.18, ""monto"": 1571.82}], ""validation"": {""total_matches_products"": true, ""rfc_format_valid"": true, ""date_format_valid"": true, ""issues"": []}}",,
+20260711T065931Z,2026-07-11T06:59:31.475754+00:00,test,ticket_1.jpg,llm_only,google/gemma-4-e2b,lmstudio,zero_shot,0.3333333333333333,False,False,False,False,False,True,True,success,,0.0,17.50768687499658,17.50768687499658,247,162,0.0,"{""fecha"": ""03/06/2025"", ""folio"": ""E13524"", ""rfc_emisor"": null, ""estacion"": ""GASOLINERO DE LA COSTA, S.A. DE CARR. FEDERAL NO. 15 TEPIC"", ""moneda"": ""MXN"", ""monto_total"": 1571.82, ""productos"": [{""descripcion"": null, ""cantidad_litros"": null, ""precio_unitario"": null, ""monto"": null}], ""validation"": {""total_matches_products"": null, ""rfc_format_valid"": null, ""date_format_valid"": null, ""issues"": []}}",,
+20260711T065931Z,2026-07-11T06:59:31.475754+00:00,test,ticket_1.jpg,ocr_llm,gemini-3.1-flash-lite,gemini,zero_shot,0.16666666666666666,False,False,False,False,False,True,False,success,tesseract,0.47028504199988674,1.231870457995683,1.7021554999955697,351,131,0.00028425,"{""fecha"": null, ""folio"": null, ""rfc_emisor"": null, ""estacion"": null, ""moneda"": ""MXN"", ""monto_total"": null, ""productos"": [], ""validation"": {""total_matches_products"": null, ""rfc_format_valid"": null, ""date_format_valid"": null, ""issues"": [""The provided OCR text is illegible and does not contain sufficient data to extract receipt details.""]}}","601 General de Loy Personas Hors
+‘te
+
+fai nee
+Hol: Sas a (cont 40
+e
+ds
+Te no
+
+‘i oR ME Se
+PRODUCTO CANTIDAD UM. PRECIO IMPORTE
+ha Pers a,
+
+it ie
+even cc
+sou re:
+“tes hs, Fl",
+20260711T065931Z,2026-07-11T06:59:31.475754+00:00,test,ticket_1.jpg,ocr_llm,google/gemma-4-e2b,lmstudio,zero_shot,0.16666666666666666,False,False,False,False,False,True,False,success,tesseract,0.47028504199988674,2.2242955840047216,2.6945806260046083,366,63,0.0,"{""fecha"": null, ""folio"": null, ""rfc_emisor"": null, ""estacion"": null, ""moneda"": ""MXN"", ""monto_total"": null, ""productos"": [], ""validation"": {""total_matches_products"": null, ""rfc_format_valid"": null, ""date_format_valid"": null, ""issues"": []}}","601 General de Loy Personas Hors
+‘te
+
+fai nee
+Hol: Sas a (cont 40
+e
+ds
+Te no
+
+‘i oR ME Se
+PRODUCTO CANTIDAD UM. PRECIO IMPORTE
+ha Pers a,
+
+it ie
+even cc
+sou re:
+“tes hs, Fl",
+20260711T065931Z,2026-07-11T06:59:31.475754+00:00,test,ticket_2.jpg,llm_only,gemini-3.1-flash-lite,gemini,zero_shot,0.6666666666666666,False,False,True,True,True,True,False,success,,0.0,1.8356227499971283,1.8356227499971283,1295,206,0.00063275,"{""fecha"": ""2025-06-04"", ""folio"": ""530036"", ""rfc_emisor"": ""GAF220603TC4"", ""estacion"": ""GAFSACOMM"", ""moneda"": ""MXN"", ""monto_total"": 370.83, ""productos"": [{""descripcion"": ""Premium"", ""cantidad_litros"": 14.839, ""precio_unitario"": 24.99, ""monto"": 370.83}], ""validation"": {""total_matches_products"": true, ""rfc_format_valid"": true, ""date_format_valid"": true, ""issues"": []}}",,
+20260711T065931Z,2026-07-11T06:59:31.475754+00:00,test,ticket_2.jpg,llm_only,google/gemma-4-e2b,lmstudio,zero_shot,0.5,False,False,False,True,True,True,False,success,,0.0,4.432425791004789,4.432425791004789,247,122,0.0,"{""fecha"": ""04/06/2023"", ""folio"": ""E14919"", ""rfc_emisor"": null, ""estacion"": ""Gasolin"", ""moneda"": ""MXN"", ""monto_total"": 370.83, ""productos"": [{""descripcion"": null, ""cantidad_litros"": null, ""precio_unitario"": null, ""monto"": null}], ""validation"": {""total_matches_products"": null, ""rfc_format_valid"": null, ""date_format_valid"": null, ""issues"": []}}",,
+20260711T065931Z,2026-07-11T06:59:31.475754+00:00,test,ticket_2.jpg,ocr_llm,gemini-3.1-flash-lite,gemini,zero_shot,0.5,False,False,False,True,True,True,False,success,tesseract,0.12601670799631393,1.0753858750031213,1.2014025829994353,279,123,0.00025425000000000003,"{""fecha"": null, ""folio"": null, ""rfc_emisor"": null, ""estacion"": null, ""moneda"": ""MXN"", ""monto_total"": null, ""productos"": [], ""validation"": {""total_matches_products"": null, ""rfc_format_valid"": null, ""date_format_valid"": null, ""issues"": [""No readable data found in the provided OCR text.""]}}",‘,
+20260711T065931Z,2026-07-11T06:59:31.475754+00:00,test,ticket_2.jpg,ocr_llm,google/gemma-4-e2b,lmstudio,zero_shot,0.5,False,False,False,True,True,True,False,success,tesseract,0.12601670799631393,2.13241850000486,2.258435208001174,294,63,0.0,"{""fecha"": null, ""folio"": null, ""rfc_emisor"": null, ""estacion"": null, ""moneda"": ""MXN"", ""monto_total"": null, ""productos"": [], ""validation"": {""total_matches_products"": null, ""rfc_format_valid"": null, ""date_format_valid"": null, ""issues"": []}}",‘,

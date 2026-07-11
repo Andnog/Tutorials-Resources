@@ -1,0 +1,439 @@
+run_id,created_at,dataset,file_name,pipeline,model,backend,prompt_variant,accuracy,passed,match_fecha,match_folio,match_rfc_emisor,match_estacion,match_moneda,match_monto_total,status,ocr_engine,ocr_latency_seconds,model_latency_seconds,latency_seconds,input_tokens,output_tokens,estimated_cost,extraction_json,ocr_text,error
+20260711T065931Z,2026-07-11T06:59:31.475754+00:00,test,ticket_1.jpg,llm_only,gemini-3.1-flash-lite,gemini,zero_shot,0.5,False,False,True,False,False,True,True,success,,0.0,1.6403881250007544,1.6403881250007544,1295,221,0.00065525,"{""fecha"": ""2025-06-03"", ""folio"": ""1174049"", ""rfc_emisor"": ""SGC111213TG9"", ""estacion"": ""SERVICIO GASOLINERO DE LA COSTA, S.A. DE"", ""moneda"": ""MXN"", ""monto_total"": 1571.82, ""productos"": [{""descripcion"": ""MAGNA"", ""cantidad_litros"": 65.005, ""precio_unitario"": 24.18, ""monto"": 1571.82}], ""validation"": {""total_matches_products"": true, ""rfc_format_valid"": true, ""date_format_valid"": true, ""issues"": []}}",,
+20260711T065931Z,2026-07-11T06:59:31.475754+00:00,test,ticket_1.jpg,llm_only,google/gemma-4-e2b,lmstudio,zero_shot,0.3333333333333333,False,False,False,False,False,True,True,success,,0.0,17.50768687499658,17.50768687499658,247,162,0.0,"{""fecha"": ""03/06/2025"", ""folio"": ""E13524"", ""rfc_emisor"": null, ""estacion"": ""GASOLINERO DE LA COSTA, S.A. DE CARR. FEDERAL NO. 15 TEPIC"", ""moneda"": ""MXN"", ""monto_total"": 1571.82, ""productos"": [{""descripcion"": null, ""cantidad_litros"": null, ""precio_unitario"": null, ""monto"": null}], ""validation"": {""total_matches_products"": null, ""rfc_format_valid"": null, ""date_format_valid"": null, ""issues"": []}}",,
+20260711T065931Z,2026-07-11T06:59:31.475754+00:00,test,ticket_1.jpg,ocr_llm,gemini-3.1-flash-lite,gemini,zero_shot,0.1666666666666666,False,False,False,False,False,True,False,success,tesseract,0.4702850419998867,1.231870457995683,1.7021554999955697,351,131,0.00028425,"{""fecha"": null, ""folio"": null, ""rfc_emisor"": null, ""estacion"": null, ""moneda"": ""MXN"", ""monto_total"": null, ""productos"": [], ""validation"": {""total_matches_products"": null, ""rfc_format_valid"": null, ""date_format_valid"": null, ""issues"": [""The provided OCR text is illegible and does not contain sufficient data to extract receipt details.""]}}","601 General de Loy Personas Hors
+‘te
+
+fai nee
+Hol: Sas a (cont 40
+e
+ds
+Te no
+
+‘i oR ME Se
+PRODUCTO CANTIDAD UM. PRECIO IMPORTE
+ha Pers a,
+
+it ie
+even cc
+sou re:
+“tes hs, Fl",
+20260711T065931Z,2026-07-11T06:59:31.475754+00:00,test,ticket_1.jpg,ocr_llm,google/gemma-4-e2b,lmstudio,zero_shot,0.1666666666666666,False,False,False,False,False,True,False,success,tesseract,0.4702850419998867,2.2242955840047216,2.6945806260046083,366,63,0.0,"{""fecha"": null, ""folio"": null, ""rfc_emisor"": null, ""estacion"": null, ""moneda"": ""MXN"", ""monto_total"": null, ""productos"": [], ""validation"": {""total_matches_products"": null, ""rfc_format_valid"": null, ""date_format_valid"": null, ""issues"": []}}","601 General de Loy Personas Hors
+‘te
+
+fai nee
+Hol: Sas a (cont 40
+e
+ds
+Te no
+
+‘i oR ME Se
+PRODUCTO CANTIDAD UM. PRECIO IMPORTE
+ha Pers a,
+
+it ie
+even cc
+sou re:
+“tes hs, Fl",
+20260711T065931Z,2026-07-11T06:59:31.475754+00:00,test,ticket_2.jpg,llm_only,gemini-3.1-flash-lite,gemini,zero_shot,0.6666666666666666,False,False,True,True,True,True,False,success,,0.0,1.8356227499971285,1.8356227499971285,1295,206,0.00063275,"{""fecha"": ""2025-06-04"", ""folio"": ""530036"", ""rfc_emisor"": ""GAF220603TC4"", ""estacion"": ""GAFSACOMM"", ""moneda"": ""MXN"", ""monto_total"": 370.83, ""productos"": [{""descripcion"": ""Premium"", ""cantidad_litros"": 14.839, ""precio_unitario"": 24.99, ""monto"": 370.83}], ""validation"": {""total_matches_products"": true, ""rfc_format_valid"": true, ""date_format_valid"": true, ""issues"": []}}",,
+20260711T065931Z,2026-07-11T06:59:31.475754+00:00,test,ticket_2.jpg,llm_only,google/gemma-4-e2b,lmstudio,zero_shot,0.5,False,False,False,True,True,True,False,success,,0.0,4.432425791004789,4.432425791004789,247,122,0.0,"{""fecha"": ""04/06/2023"", ""folio"": ""E14919"", ""rfc_emisor"": null, ""estacion"": ""Gasolin"", ""moneda"": ""MXN"", ""monto_total"": 370.83, ""productos"": [{""descripcion"": null, ""cantidad_litros"": null, ""precio_unitario"": null, ""monto"": null}], ""validation"": {""total_matches_products"": null, ""rfc_format_valid"": null, ""date_format_valid"": null, ""issues"": []}}",,
+20260711T065931Z,2026-07-11T06:59:31.475754+00:00,test,ticket_2.jpg,ocr_llm,gemini-3.1-flash-lite,gemini,zero_shot,0.5,False,False,False,True,True,True,False,success,tesseract,0.1260167079963139,1.075385875003121,1.2014025829994353,279,123,0.00025425,"{""fecha"": null, ""folio"": null, ""rfc_emisor"": null, ""estacion"": null, ""moneda"": ""MXN"", ""monto_total"": null, ""productos"": [], ""validation"": {""total_matches_products"": null, ""rfc_format_valid"": null, ""date_format_valid"": null, ""issues"": [""No readable data found in the provided OCR text.""]}}",‘,
+20260711T065931Z,2026-07-11T06:59:31.475754+00:00,test,ticket_2.jpg,ocr_llm,google/gemma-4-e2b,lmstudio,zero_shot,0.5,False,False,False,True,True,True,False,success,tesseract,0.1260167079963139,2.13241850000486,2.258435208001174,294,63,0.0,"{""fecha"": null, ""folio"": null, ""rfc_emisor"": null, ""estacion"": null, ""moneda"": ""MXN"", ""monto_total"": null, ""productos"": [], ""validation"": {""total_matches_products"": null, ""rfc_format_valid"": null, ""date_format_valid"": null, ""issues"": []}}",‘,
+20260711T070155Z,2026-07-11T07:01:55.543266+00:00,evaluation,1.png,llm_only,gemini-3.1-flash-lite,gemini,zero_shot,0.3333333333333333,False,False,False,True,False,True,False,success,,0.0,1.9059340419989896,1.9059340419989896,1295,226,0.0006627499999999,"{""fecha"": ""2025-03-07"", ""folio"": ""1273597"", ""rfc_emisor"": null, ""estacion"": ""Camionero Mas Ese Litro, S.A. de C.V."", ""moneda"": ""MXN"", ""monto_total"": 1600.13, ""productos"": [{""descripcion"": ""Regular"", ""cantidad_litros"": 71.787, ""precio_unitario"": 22.29, ""monto"": 1600.13}], ""validation"": {""total_matches_products"": true, ""rfc_format_valid"": false, ""date_format_valid"": true, ""issues"": [""RFC emisor no encontrado en el ticket""]}}",,
+20260711T070155Z,2026-07-11T07:01:55.543266+00:00,evaluation,1.png,llm_only,google/gemma-4-e2b,lmstudio,zero_shot,0.3333333333333333,False,False,False,True,False,True,False,success,,0.0,4.603296625005896,4.603296625005896,247,118,0.0,"{""fecha"": null, ""folio"": null, ""rfc_emisor"": null, ""estacion"": ""Gasolinera"", ""moneda"": ""MXN"", ""monto_total"": 16493.13, ""productos"": [{""descripcion"": null, ""cantidad_litros"": null, ""precio_unitario"": null, ""monto"": null}], ""validation"": {""total_matches_products"": null, ""rfc_format_valid"": null, ""date_format_valid"": null, ""issues"": []}}",,
+20260711T070155Z,2026-07-11T07:01:55.543266+00:00,evaluation,1.png,ocr_llm,gemini-3.1-flash-lite,gemini,zero_shot,0.3333333333333333,False,False,False,True,False,True,False,success,tesseract,0.2967865419996087,1.238020625001809,1.5348071670014178,295,123,0.00025825,"{""fecha"": null, ""folio"": null, ""rfc_emisor"": null, ""estacion"": null, ""moneda"": ""MXN"", ""monto_total"": null, ""productos"": [], ""validation"": {""total_matches_products"": null, ""rfc_format_valid"": null, ""date_format_valid"": null, ""issues"": [""No readable receipt data found in the provided text.""]}}","~
+= de. AFIRME
+o
+ar
+ae |
+a",
+20260711T070155Z,2026-07-11T07:01:55.543266+00:00,evaluation,1.png,ocr_llm,google/gemma-4-e2b,lmstudio,zero_shot,0.3333333333333333,False,False,False,True,False,True,False,success,tesseract,0.2967865419996087,2.0539036659974954,2.350690207997104,310,63,0.0,"{""fecha"": null, ""folio"": null, ""rfc_emisor"": null, ""estacion"": null, ""moneda"": ""MXN"", ""monto_total"": null, ""productos"": [], ""validation"": {""total_matches_products"": null, ""rfc_format_valid"": null, ""date_format_valid"": null, ""issues"": []}}","~
+= de. AFIRME
+o
+ar
+ae |
+a",
+20260711T070155Z,2026-07-11T07:01:55.543266+00:00,evaluation,2.png,llm_only,gemini-3.1-flash-lite,gemini,zero_shot,0.6666666666666666,False,False,True,True,False,True,True,success,,0.0,1.605280916002812,1.605280916002812,1295,219,0.00065225,"{""fecha"": ""2025-02-16"", ""folio"": ""6758233"", ""rfc_emisor"": ""SAB010116SB9"", ""estacion"": ""SERVICIO LOS ABETOS S.A. DE C.V."", ""moneda"": ""MXN"", ""monto_total"": 1000.14, ""productos"": [{""descripcion"": ""Magna"", ""cantidad_litros"": 43.315, ""precio_unitario"": 23.09, ""monto"": 1000.14}], ""validation"": {""total_matches_products"": true, ""rfc_format_valid"": true, ""date_format_valid"": true, ""issues"": []}}",,
+20260711T070155Z,2026-07-11T07:01:55.543266+00:00,evaluation,2.png,llm_only,google/gemma-4-e2b,lmstudio,zero_shot,0.5,False,False,False,True,False,True,True,success,,0.0,4.811888582997199,4.811888582997199,247,143,0.0,"{""fecha"": ""16/02/2025"", ""folio"": ""67523330"", ""rfc_emisor"": null, ""estacion"": ""ESTACION DE GASOLINA LOS ABETOS"", ""moneda"": ""MXN"", ""monto_total"": 1000.14, ""productos"": [{""descripcion"": null, ""cantidad_litros"": null, ""precio_unitario"": null, ""monto"": null}], ""validation"": {""total_matches_products"": null, ""rfc_format_valid"": null, ""date_format_valid"": null, ""issues"": []}}",,
+20260711T070155Z,2026-07-11T07:01:55.543266+00:00,evaluation,2.png,ocr_llm,gemini-3.1-flash-lite,gemini,zero_shot,0.3333333333333333,False,False,False,True,False,True,False,success,tesseract,0.1327883340054541,1.068553333003365,1.201341667008819,281,123,0.00025475,"{""fecha"": null, ""folio"": null, ""rfc_emisor"": null, ""estacion"": null, ""moneda"": ""MXN"", ""monto_total"": null, ""productos"": [], ""validation"": {""total_matches_products"": null, ""rfc_format_valid"": null, ""date_format_valid"": null, ""issues"": [""No valid receipt data found in the provided text.""]}}","a
+A",
+20260711T070155Z,2026-07-11T07:01:55.543266+00:00,evaluation,2.png,ocr_llm,google/gemma-4-e2b,lmstudio,zero_shot,0.3333333333333333,False,False,False,True,False,True,False,success,tesseract,0.1327883340054541,2.039112999998906,2.1719013340043603,296,63,0.0,"{""fecha"": null, ""folio"": null, ""rfc_emisor"": null, ""estacion"": null, ""moneda"": ""MXN"", ""monto_total"": null, ""productos"": [], ""validation"": {""total_matches_products"": null, ""rfc_format_valid"": null, ""date_format_valid"": null, ""issues"": []}}","a
+A",
+20260711T070301Z,2026-07-11T07:03:01.447985+00:00,evaluation,1.png,llm_only,gemini-3.1-flash-lite,gemini,few_shot,0.3333333333333333,False,False,False,True,False,True,False,success,,0.0,1.7600454580024234,1.7600454580024234,1507,226,0.00071575,"{""fecha"": ""2025-03-07"", ""folio"": ""1273597"", ""rfc_emisor"": null, ""estacion"": ""Camionero Max Eve Litro, S.A. de C.V."", ""moneda"": ""MXN"", ""monto_total"": 1600.13, ""productos"": [{""descripcion"": ""Regular"", ""cantidad_litros"": 71.787, ""precio_unitario"": 22.29, ""monto"": 1600.13}], ""validation"": {""total_matches_products"": true, ""rfc_format_valid"": false, ""date_format_valid"": true, ""issues"": [""RFC emisor no encontrado en el ticket""]}}",,
+20260711T070301Z,2026-07-11T07:03:01.447985+00:00,evaluation,1.png,llm_only,zai-org/glm-4.6v-flash,lmstudio,few_shot,0.3333333333333333,False,False,False,True,False,True,False,success,,0.0,19.617202042005378,19.617202042005378,392,94,0.0,"{""fecha"": null, ""folio"": ""AP908671"", ""rfc_emisor"": null, ""estacion"": null, ""moneda"": ""MXN"", ""monto_total"": 1600.13, ""productos"": [], ""validation"": {""total_matches_products"": null, ""rfc_format_valid"": null, ""date_format_valid"": null, ""issues"": [""Missing product details"", ""No RFC or station name found""]}}",,
+20260711T070301Z,2026-07-11T07:03:01.447985+00:00,evaluation,1.png,ocr_llm,gemini-3.1-flash-lite,gemini,few_shot,0.3333333333333333,False,False,False,True,False,True,False,success,tesseract,0.2724088749964721,1.2126684999966528,1.485077374993125,507,119,0.0003052499999999,"{""fecha"": null, ""folio"": null, ""rfc_emisor"": null, ""estacion"": ""AFIRME"", ""moneda"": ""MXN"", ""monto_total"": null, ""productos"": [], ""validation"": {""total_matches_products"": null, ""rfc_format_valid"": null, ""date_format_valid"": null, ""issues"": [""No receipt data found in the provided text.""]}}","~
+= de. AFIRME
+o
+ar
+ae |
+a",
+20260711T070301Z,2026-07-11T07:03:01.447985+00:00,evaluation,1.png,ocr_llm,zai-org/glm-4.6v-flash,lmstudio,few_shot,0.3333333333333333,False,False,False,True,False,True,False,success,tesseract,0.2724088749964721,6.327720082997985,6.600128957994457,447,71,0.0,"{""fecha"": null, ""folio"": null, ""rfc_emisor"": null, ""estacion"": null, ""moneda"": ""MXN"", ""monto_total"": null, ""productos"": [], ""validation"": {""total_matches_products"": true, ""rfc_format_valid"": true, ""date_format_valid"": true, ""issues"": []}}","~
+= de. AFIRME
+o
+ar
+ae |
+a",
+20260711T070301Z,2026-07-11T07:03:01.447985+00:00,evaluation,2.png,llm_only,gemini-3.1-flash-lite,gemini,few_shot,0.6666666666666666,False,False,True,True,False,True,True,success,,0.0,10.984878415998535,10.984878415998535,1507,219,0.00070525,"{""fecha"": ""2025-02-16"", ""folio"": ""6758233"", ""rfc_emisor"": ""SAB010116SB9"", ""estacion"": ""SERVICIO LOS ABETOS S.A. DE C.V."", ""moneda"": ""MXN"", ""monto_total"": 1000.14, ""productos"": [{""descripcion"": ""Magna"", ""cantidad_litros"": 43.315, ""precio_unitario"": 23.09, ""monto"": 1000.14}], ""validation"": {""total_matches_products"": true, ""rfc_format_valid"": true, ""date_format_valid"": true, ""issues"": []}}",,
+20260711T070301Z,2026-07-11T07:03:01.447985+00:00,evaluation,2.png,llm_only,zai-org/glm-4.6v-flash,lmstudio,few_shot,0.5,False,False,False,True,False,True,True,success,,0.0,11.115946666002856,11.115946666002856,392,126,0.0,"{""fecha"": ""2022-03-19"", ""folio"": ""P 94541222"", ""rfc_emisor"": null, ""estacion"": null, ""moneda"": ""MXN"", ""monto_total"": 1000.14, ""productos"": [{""descripcion"": ""Magna"", ""cantidad_litros"": 43.315, ""precio_unitario"": 23.109, ""monto"": 1000.14}], ""validation"": {""total_matches_products"": true, ""rfc_format_valid"": null, ""date_format_valid"": true, ""issues"": []}}",,
+20260711T070301Z,2026-07-11T07:03:01.447985+00:00,evaluation,2.png,ocr_llm,gemini-3.1-flash-lite,gemini,few_shot,0.3333333333333333,False,False,False,True,False,True,False,success,tesseract,0.3099449590008589,1.2311785410056473,1.5411235000065062,493,122,0.00030625,"{""fecha"": null, ""folio"": null, ""rfc_emisor"": null, ""estacion"": null, ""moneda"": ""MXN"", ""monto_total"": null, ""productos"": [], ""validation"": {""total_matches_products"": null, ""rfc_format_valid"": null, ""date_format_valid"": null, ""issues"": [""No valid receipt data found in OCR text""]}}","a
+A",
+20260711T070301Z,2026-07-11T07:03:01.447985+00:00,evaluation,2.png,ocr_llm,zai-org/glm-4.6v-flash,lmstudio,few_shot,0.3333333333333333,False,False,False,True,False,True,False,success,tesseract,0.3099449590008589,4.993683542001236,5.303628501002095,435,71,0.0,"{""fecha"": null, ""folio"": null, ""rfc_emisor"": null, ""estacion"": null, ""moneda"": ""MXN"", ""monto_total"": null, ""productos"": [], ""validation"": {""total_matches_products"": true, ""rfc_format_valid"": true, ""date_format_valid"": true, ""issues"": []}}","a
+A",
+20260711T070413Z,2026-07-11T07:04:13.330526+00:00,test,ticket_1.jpg,llm_only,gemini-3.1-flash-lite,gemini,few_shot,0.5,False,False,True,False,False,True,True,success,,0.0,1.4150125829983151,1.4150125829983151,1507,221,0.00070825,"{""fecha"": ""2025-06-03"", ""folio"": ""1174049"", ""rfc_emisor"": ""SGC111213TG9"", ""estacion"": ""SERVICIO GASOLINERO DE LA COSTA, S.A. DE"", ""moneda"": ""MXN"", ""monto_total"": 1571.82, ""productos"": [{""descripcion"": ""MAGNA"", ""cantidad_litros"": 65.005, ""precio_unitario"": 24.18, ""monto"": 1571.82}], ""validation"": {""total_matches_products"": true, ""rfc_format_valid"": true, ""date_format_valid"": true, ""issues"": []}}",,
+20260711T070413Z,2026-07-11T07:04:13.330526+00:00,test,ticket_1.jpg,llm_only,zai-org/glm-4.6v-flash,lmstudio,few_shot,0.3333333333333333,False,False,False,False,False,True,True,success,,0.0,13.952026791004757,13.952026791004757,392,156,0.0,"{""fecha"": ""2025-08-06"", ""folio"": ""1174040"", ""rfc_emisor"": ""PL/20676/LP/ES/2017"", ""estacion"": ""SERVICIO GASOLINERO DE LA COSA, S.A. DE C.V."", ""moneda"": ""MXN"", ""monto_total"": 1571.82, ""productos"": [{""descripcion"": ""MAGNA"", ""cantidad_litros"": 65.005, ""precio_unitario"": 21.7982, ""monto"": 1421.82}], ""validation"": {""total_matches_products"": true, ""rfc_format_valid"": true, ""date_format_valid"": true, ""issues"": []}}",,
+20260711T070413Z,2026-07-11T07:04:13.330526+00:00,test,ticket_1.jpg,ocr_llm,gemini-3.1-flash-lite,gemini,few_shot,0.1666666666666666,False,False,False,False,False,True,False,success,tesseract,0.2875846669994644,1.0848546670022188,1.3724393340016832,563,126,0.0003297499999999,"{""fecha"": null, ""folio"": null, ""rfc_emisor"": null, ""estacion"": null, ""moneda"": ""MXN"", ""monto_total"": null, ""productos"": [], ""validation"": {""total_matches_products"": null, ""rfc_format_valid"": null, ""date_format_valid"": null, ""issues"": [""OCR text is illegible and does not contain valid receipt data.""]}}","601 General de Loy Personas Hors
+‘te
+
+fai nee
+Hol: Sas a (cont 40
+e
+ds
+Te no
+
+‘i oR ME Se
+PRODUCTO CANTIDAD UM. PRECIO IMPORTE
+ha Pers a,
+
+it ie
+even cc
+sou re:
+“tes hs, Fl",
+20260711T070413Z,2026-07-11T07:04:13.330526+00:00,test,ticket_1.jpg,ocr_llm,zai-org/glm-4.6v-flash,lmstudio,few_shot,0.1666666666666666,False,False,False,False,False,True,False,success,tesseract,0.2875846669994644,5.410769624999375,5.6983542919988395,505,71,0.0,"{""fecha"": null, ""folio"": null, ""rfc_emisor"": null, ""estacion"": null, ""moneda"": ""MXN"", ""monto_total"": null, ""productos"": [], ""validation"": {""total_matches_products"": true, ""rfc_format_valid"": true, ""date_format_valid"": true, ""issues"": []}}","601 General de Loy Personas Hors
+‘te
+
+fai nee
+Hol: Sas a (cont 40
+e
+ds
+Te no
+
+‘i oR ME Se
+PRODUCTO CANTIDAD UM. PRECIO IMPORTE
+ha Pers a,
+
+it ie
+even cc
+sou re:
+“tes hs, Fl",
+20260711T070413Z,2026-07-11T07:04:13.330526+00:00,test,ticket_2.jpg,llm_only,gemini-3.1-flash-lite,gemini,few_shot,0.6666666666666666,False,False,True,True,True,True,False,success,,0.0,1.7094980830006534,1.7094980830006534,1507,206,0.0006857499999999,"{""fecha"": ""2025-06-04"", ""folio"": ""530036"", ""rfc_emisor"": ""GAF220603TC4"", ""estacion"": ""GAFSACOMM"", ""moneda"": ""MXN"", ""monto_total"": 370.83, ""productos"": [{""descripcion"": ""Premium"", ""cantidad_litros"": 14.839, ""precio_unitario"": 24.99, ""monto"": 370.83}], ""validation"": {""total_matches_products"": true, ""rfc_format_valid"": true, ""date_format_valid"": true, ""issues"": []}}",,
+20260711T070413Z,2026-07-11T07:04:13.330526+00:00,test,ticket_2.jpg,llm_only,zai-org/glm-4.6v-flash,lmstudio,few_shot,0.5,False,False,False,True,True,True,False,success,,0.0,12.525056416001462,12.525056416001462,392,134,0.0,"{""fecha"": ""2023-11-15"", ""folio"": ""E14189"", ""rfc_emisor"": null, ""estacion"": ""Pemex 3841"", ""moneda"": ""MXN"", ""monto_total"": 32.1, ""productos"": [{""descripcion"": ""Premium (Línea PUD)"", ""cantidad_litros"": 14.53, ""precio_unitario"": 22.1, ""monto"": 318.03}], ""validation"": {""total_matches_products"": true, ""rfc_format_valid"": null, ""date_format_valid"": true, ""issues"": []}}",,
+20260711T070413Z,2026-07-11T07:04:13.330526+00:00,test,ticket_2.jpg,ocr_llm,gemini-3.1-flash-lite,gemini,few_shot,0.5,False,False,False,True,True,True,False,success,tesseract,0.2617178750006133,0.8953241670023999,1.1570420420030132,491,117,0.00029825,"{""fecha"": null, ""folio"": null, ""rfc_emisor"": null, ""estacion"": null, ""moneda"": ""MXN"", ""monto_total"": null, ""productos"": [], ""validation"": {""total_matches_products"": null, ""rfc_format_valid"": null, ""date_format_valid"": null, ""issues"": [""No readable data found in the provided OCR text.""]}}",‘,
+20260711T070413Z,2026-07-11T07:04:13.330526+00:00,test,ticket_2.jpg,ocr_llm,zai-org/glm-4.6v-flash,lmstudio,few_shot,0.5,False,False,False,True,True,True,False,success,tesseract,0.2617178750006133,5.053718166003819,5.315436041004432,433,71,0.0,"{""fecha"": null, ""folio"": null, ""rfc_emisor"": null, ""estacion"": null, ""moneda"": ""MXN"", ""monto_total"": null, ""productos"": [], ""validation"": {""total_matches_products"": true, ""rfc_format_valid"": true, ""date_format_valid"": true, ""issues"": []}}",‘,
+20260711T135550Z,2026-07-11T13:55:50.686590+00:00,test,ticket_1.jpg,llm_only,gemini-3.1-flash-lite,gemini,zero_shot,0.5,False,False,True,False,False,True,True,success,,0.0,2.777729000000022,2.777729000000022,1295,221,0.00065525,"{""fecha"": ""2025-06-03"", ""folio"": ""1174049"", ""rfc_emisor"": ""SGC111213TG9"", ""estacion"": ""SERVICIO GASOLINERO DE LA COSTA, S.A. DE"", ""moneda"": ""MXN"", ""monto_total"": 1571.82, ""productos"": [{""descripcion"": ""MAGNA"", ""cantidad_litros"": 65.005, ""precio_unitario"": 24.18, ""monto"": 1571.82}], ""validation"": {""total_matches_products"": true, ""rfc_format_valid"": true, ""date_format_valid"": true, ""issues"": []}}",,
+20260711T135550Z,2026-07-11T13:55:50.686590+00:00,test,ticket_1.jpg,llm_only,google/gemma-4-e2b,lmstudio,zero_shot,0.3333333333333333,False,False,False,False,False,True,True,success,,0.0,17.12094941600003,17.12094941600003,247,162,0.0,"{""fecha"": ""03/06/2025"", ""folio"": ""E13524"", ""rfc_emisor"": null, ""estacion"": ""GASOLINERO DE LA COSTA, S.A. DE CARR. FEDERAL NO. 15 TEPIC"", ""moneda"": ""MXN"", ""monto_total"": 1571.82, ""productos"": [{""descripcion"": null, ""cantidad_litros"": null, ""precio_unitario"": null, ""monto"": null}], ""validation"": {""total_matches_products"": null, ""rfc_format_valid"": null, ""date_format_valid"": null, ""issues"": []}}",,
+20260711T135550Z,2026-07-11T13:55:50.686590+00:00,test,ticket_1.jpg,ocr_llm,gemini-3.1-flash-lite,gemini,zero_shot,0.1666666666666666,False,False,False,False,False,True,False,success,tesseract,0.4013374170000361,1.0652405830001044,1.4665780000001405,351,131,0.00028425,"{""fecha"": null, ""folio"": null, ""rfc_emisor"": null, ""estacion"": null, ""moneda"": ""MXN"", ""monto_total"": null, ""productos"": [], ""validation"": {""total_matches_products"": null, ""rfc_format_valid"": null, ""date_format_valid"": null, ""issues"": [""The provided OCR text is illegible and does not contain sufficient data to extract receipt details.""]}}","601 General de Loy Personas Hors
+‘te
+
+fai nee
+Hol: Sas a (cont 40
+e
+ds
+Te no
+
+‘i oR ME Se
+PRODUCTO CANTIDAD UM. PRECIO IMPORTE
+ha Pers a,
+
+it ie
+even cc
+sou re:
+“tes hs, Fl",
+20260711T135550Z,2026-07-11T13:55:50.686590+00:00,test,ticket_1.jpg,ocr_llm,google/gemma-4-e2b,lmstudio,zero_shot,0.1666666666666666,False,False,False,False,False,True,False,success,tesseract,0.4013374170000361,2.2908919999999853,2.6922294170000214,366,63,0.0,"{""fecha"": null, ""folio"": null, ""rfc_emisor"": null, ""estacion"": null, ""moneda"": ""MXN"", ""monto_total"": null, ""productos"": [], ""validation"": {""total_matches_products"": null, ""rfc_format_valid"": null, ""date_format_valid"": null, ""issues"": []}}","601 General de Loy Personas Hors
+‘te
+
+fai nee
+Hol: Sas a (cont 40
+e
+ds
+Te no
+
+‘i oR ME Se
+PRODUCTO CANTIDAD UM. PRECIO IMPORTE
+ha Pers a,
+
+it ie
+even cc
+sou re:
+“tes hs, Fl",
+20260711T135550Z,2026-07-11T13:55:50.686590+00:00,test,ticket_2.jpg,llm_only,gemini-3.1-flash-lite,gemini,zero_shot,0.6666666666666666,False,False,True,True,True,True,False,success,,0.0,1.992693458999952,1.992693458999952,1295,206,0.00063275,"{""fecha"": ""2025-06-04"", ""folio"": ""530036"", ""rfc_emisor"": ""GAF220603TC4"", ""estacion"": ""GAFSACOMM"", ""moneda"": ""MXN"", ""monto_total"": 370.83, ""productos"": [{""descripcion"": ""Premium"", ""cantidad_litros"": 14.839, ""precio_unitario"": 24.99, ""monto"": 370.83}], ""validation"": {""total_matches_products"": true, ""rfc_format_valid"": true, ""date_format_valid"": true, ""issues"": []}}",,
+20260711T135550Z,2026-07-11T13:55:50.686590+00:00,test,ticket_2.jpg,llm_only,google/gemma-4-e2b,lmstudio,zero_shot,0.5,False,False,False,True,True,True,False,success,,0.0,4.638962542000058,4.638962542000058,247,122,0.0,"{""fecha"": ""04/06/2023"", ""folio"": ""E14919"", ""rfc_emisor"": null, ""estacion"": ""Gasolin"", ""moneda"": ""MXN"", ""monto_total"": 370.83, ""productos"": [{""descripcion"": null, ""cantidad_litros"": null, ""precio_unitario"": null, ""monto"": null}], ""validation"": {""total_matches_products"": null, ""rfc_format_valid"": null, ""date_format_valid"": null, ""issues"": []}}",,
+20260711T135550Z,2026-07-11T13:55:50.686590+00:00,test,ticket_2.jpg,ocr_llm,gemini-3.1-flash-lite,gemini,zero_shot,0.5,False,False,False,True,True,True,False,success,tesseract,0.1300220420000641,1.1150527080000074,1.2450747500000716,279,123,0.00025425,"{""fecha"": null, ""folio"": null, ""rfc_emisor"": null, ""estacion"": null, ""moneda"": ""MXN"", ""monto_total"": null, ""productos"": [], ""validation"": {""total_matches_products"": null, ""rfc_format_valid"": null, ""date_format_valid"": null, ""issues"": [""No readable data found in the provided OCR text.""]}}",‘,
+20260711T135550Z,2026-07-11T13:55:50.686590+00:00,test,ticket_2.jpg,ocr_llm,google/gemma-4-e2b,lmstudio,zero_shot,0.5,False,False,False,True,True,True,False,success,tesseract,0.1300220420000641,1.7709134579999954,1.9009355000000596,294,63,0.0,"{""fecha"": null, ""folio"": null, ""rfc_emisor"": null, ""estacion"": null, ""moneda"": ""MXN"", ""monto_total"": null, ""productos"": [], ""validation"": {""total_matches_products"": null, ""rfc_format_valid"": null, ""date_format_valid"": null, ""issues"": []}}",‘,
+20260711T135550Z,2026-07-11T13:55:50.686590+00:00,test,ticket_3.jpg,llm_only,gemini-3.1-flash-lite,gemini,zero_shot,0.6666666666666666,False,False,True,True,False,True,True,success,,0.0,2.364116707999983,2.364116707999983,1295,232,0.00067175,"{""fecha"": ""2025-06-04"", ""folio"": ""GT8691"", ""rfc_emisor"": ""GTE941124DN6"", ""estacion"": ""GASOLINERA TEOLOYUCAN, S.A. DE C.V."", ""moneda"": ""MXN"", ""monto_total"": 5000.0, ""productos"": [{""descripcion"": ""Diesel Ultrabajo"", ""cantidad_litros"": 195.386623759281, ""precio_unitario"": 25.59, ""monto"": 5000.0}], ""validation"": {""total_matches_products"": true, ""rfc_format_valid"": true, ""date_format_valid"": true, ""issues"": []}}",,
+20260711T135550Z,2026-07-11T13:55:50.686590+00:00,test,ticket_3.jpg,llm_only,google/gemma-4-e2b,lmstudio,zero_shot,0.3333333333333333,False,False,False,False,True,True,False,success,,0.0,6.4473186669999905,6.4473186669999905,247,194,0.0,"{""fecha"": null, ""folio"": ""PL/2616/EXP/ES/2015"", ""rfc_emisor"": null, ""estacion"": ""GASOLINERA TEOLOYUCAN S.A. DE C.V."", ""moneda"": ""MXN"", ""monto_total"": 421.19, ""productos"": [{""descripcion"": null, ""cantidad_litros"": null, ""precio_unitario"": null, ""monto"": null}, {""descripcion"": null, ""cantidad_litros"": null, ""precio_unitario"": null, ""monto"": null}], ""validation"": {""total_matches_products"": null, ""rfc_format_valid"": null, ""date_format_valid"": null, ""issues"": []}}",,
+20260711T135550Z,2026-07-11T13:55:50.686590+00:00,test,ticket_3.jpg,ocr_llm,gemini-3.1-flash-lite,gemini,zero_shot,0.1666666666666666,False,False,False,False,False,True,False,success,tesseract,0.2538825419999284,18.804080333,19.05796287499993,406,167,0.000352,"{""fecha"": null, ""folio"": ""sg0216408"", ""rfc_emisor"": null, ""estacion"": ""GASOLINERA TEOLOYUCAN S.A."", ""moneda"": ""MXN"", ""monto_total"": null, ""productos"": [], ""validation"": {""total_matches_products"": null, ""rfc_format_valid"": false, ""date_format_valid"": false, ""issues"": [""Fecha no encontrada"", ""RFC emisor no encontrado"", ""Monto total no encontrado"", ""No se detectaron productos en el ticket""]}}","'BL/2618/EXP/5S/201
+IGASOLINERA 7 .
+GGASOLANERA TEOLOYUCAN S.A.
+UTOBISTA QUERÉTARO - MEXICO
+o
+
+sg0216408
+
+GGresarizaDN
+
+CLAVE CLIENTE PENE
+
+PERMESO C.REe!
+
+Reginen Fisca
+
+Lugar
+
+548
+
+AGREDE
+
+PRONTO 1110
+
+A ORGINAL seesseesreees
+
+Despacho ¥a79652",
+20260711T135550Z,2026-07-11T13:55:50.686590+00:00,test,ticket_3.jpg,ocr_llm,google/gemma-4-e2b,lmstudio,zero_shot,0.1666666666666666,False,False,False,False,False,True,False,success,tesseract,0.2538825419999284,2.6028173330000755,2.856699875000004,421,91,0.0,"{""fecha"": null, ""folio"": ""BL/2618/EXP/5S/201"", ""rfc_emisor"": null, ""estacion"": ""GGASOLANERA TEOLOYUCAN S.A."", ""moneda"": ""MXN"", ""monto_total"": null, ""productos"": [], ""validation"": {""total_matches_products"": null, ""rfc_format_valid"": null, ""date_format_valid"": null, ""issues"": []}}","'BL/2618/EXP/5S/201
+IGASOLINERA 7 .
+GGASOLANERA TEOLOYUCAN S.A.
+UTOBISTA QUERÉTARO - MEXICO
+o
+
+sg0216408
+
+GGresarizaDN
+
+CLAVE CLIENTE PENE
+
+PERMESO C.REe!
+
+Reginen Fisca
+
+Lugar
+
+548
+
+AGREDE
+
+PRONTO 1110
+
+A ORGINAL seesseesreees
+
+Despacho ¥a79652",
+20260711T135550Z,2026-07-11T13:55:50.686590+00:00,test,ticket_4.jpg,llm_only,gemini-3.1-flash-lite,gemini,zero_shot,0.3333333333333333,False,False,False,False,False,True,True,success,,0.0,18.98756574999993,18.98756574999993,1295,225,0.0006612499999999,"{""fecha"": ""2025-06-04"", ""folio"": ""GT8693"", ""rfc_emisor"": ""GTK941124IN6"", ""estacion"": ""GASOLINERA TEOLOYUCAN, SA DE CV"", ""moneda"": ""MXN"", ""monto_total"": 7000.0, ""productos"": [{""descripcion"": ""Diesel Ultrabajo"", ""cantidad_litros"": 273.54433262993, ""precio_unitario"": 25.59, ""monto"": 7000.0}], ""validation"": {""total_matches_products"": true, ""rfc_format_valid"": true, ""date_format_valid"": true, ""issues"": []}}",,
+20260711T135550Z,2026-07-11T13:55:50.686590+00:00,test,ticket_4.jpg,llm_only,google/gemma-4-e2b,lmstudio,zero_shot,0.3333333333333333,False,False,False,False,False,True,True,success,,0.0,5.528452750000042,5.528452750000042,247,149,0.0,"{""fecha"": ""04/06/2025"", ""folio"": ""GT8693"", ""rfc_emisor"": null, ""estacion"": ""GASOLINERA TROLOYUCAN S.A. DE C.V."", ""moneda"": ""MXN"", ""monto_total"": 7000.0, ""productos"": [{""descripcion"": null, ""cantidad_litros"": null, ""precio_unitario"": null, ""monto"": null}], ""validation"": {""total_matches_products"": null, ""rfc_format_valid"": null, ""date_format_valid"": null, ""issues"": []}}",,
+20260711T135550Z,2026-07-11T13:55:50.686590+00:00,test,ticket_4.jpg,ocr_llm,gemini-3.1-flash-lite,gemini,zero_shot,0.3333333333333333,False,False,False,False,False,True,True,success,tesseract,0.5584703749999562,1.2790489999999863,1.8375193749999423,509,229,0.00047075,"{""fecha"": null, ""folio"": ""538546"", ""rfc_emisor"": null, ""estacion"": null, ""moneda"": ""MXN"", ""monto_total"": 7000.0, ""productos"": [{""descripcion"": null, ""cantidad_litros"": 25.59, ""precio_unitario"": null, ""monto"": null}], ""validation"": {""total_matches_products"": false, ""rfc_format_valid"": false, ""date_format_valid"": false, ""issues"": [""Fecha no encontrada"", ""RFC emisor no encontrado"", ""Nombre de la estación no encontrado"", ""El monto total no puede ser validado contra los productos debido a falta de precios unitarios"", ""Descripción del producto incompleta""]}}","Sve Chimie po, ny
+= 2 a
+al
+i
+54600 G E po 3
+EA mea
+slossesnse REO. HAL tasennsenscts A
+Sabrichos ceed an ee
+poco orde << COPIA DÉ >
+PA Garoe/zons-virs2(0T6699) E cuen
+ae cercanas Aa
+RESFCS. : JEFE DE TURNO, APROBADA
+E AUT:538546 OPER: 001222
+> ranma nie pace <<<ce) (raciete) REA
+E OLE a 8
+A > seeeeaaaeszezo9 LTR 25.59 gy ah ae
+- ie a Nea ua ge
+sano Eos Ed
+EEE
+TOTAL 7,000.00
+Gniene 50 PACTUIA EL ISI DIA DE SU
+RRA TAVOR DE PASAR, A LA OFINA OR
+SACTORACION OE LA, FADES",
+20260711T135550Z,2026-07-11T13:55:50.686590+00:00,test,ticket_4.jpg,ocr_llm,google/gemma-4-e2b,lmstudio,zero_shot,0.3333333333333333,False,False,False,False,False,True,True,success,tesseract,0.5584703749999562,3.715326000000005,4.273796374999961,524,114,0.0,"{""fecha"": null, ""folio"": null, ""rfc_emisor"": null, ""estacion"": ""Sve Chimie po, ny"", ""moneda"": ""MXN"", ""monto_total"": 7000.0, ""productos"": [{""descripcion"": null, ""cantidad_litros"": null, ""precio_unitario"": null, ""monto"": null}], ""validation"": {""total_matches_products"": null, ""rfc_format_valid"": null, ""date_format_valid"": null, ""issues"": []}}","Sve Chimie po, ny
+= 2 a
+al
+i
+54600 G E po 3
+EA mea
+slossesnse REO. HAL tasennsenscts A
+Sabrichos ceed an ee
+poco orde << COPIA DÉ >
+PA Garoe/zons-virs2(0T6699) E cuen
+ae cercanas Aa
+RESFCS. : JEFE DE TURNO, APROBADA
+E AUT:538546 OPER: 001222
+> ranma nie pace <<<ce) (raciete) REA
+E OLE a 8
+A > seeeeaaaeszezo9 LTR 25.59 gy ah ae
+- ie a Nea ua ge
+sano Eos Ed
+EEE
+TOTAL 7,000.00
+Gniene 50 PACTUIA EL ISI DIA DE SU
+RRA TAVOR DE PASAR, A LA OFINA OR
+SACTORACION OE LA, FADES",
+20260711T135550Z,2026-07-11T13:55:50.686590+00:00,test,ticket_5.jpg,llm_only,gemini-3.1-flash-lite,gemini,zero_shot,0.8333333333333334,False,False,True,True,True,True,True,success,,0.0,1.9454273750000084,1.9454273750000084,1295,206,0.00063275,"{""fecha"": ""2025-06-03"", ""folio"": ""361841"", ""rfc_emisor"": ""ESD04101425A"", ""estacion"": ""SERVICIO DEL DESIERTO"", ""moneda"": ""MXN"", ""monto_total"": 1760.0, ""productos"": [{""descripcion"": ""Diesel"", ""cantidad_litros"": 64.25, ""precio_unitario"": 27.39, ""monto"": 1760.0}], ""validation"": {""total_matches_products"": true, ""rfc_format_valid"": true, ""date_format_valid"": true, ""issues"": []}}",,
+20260711T135550Z,2026-07-11T13:55:50.686590+00:00,test,ticket_5.jpg,llm_only,google/gemma-4-e2b,lmstudio,zero_shot,0.5,False,False,False,False,True,True,True,success,,0.0,6.011793207999972,6.011793207999972,247,160,0.0,"{""fecha"": ""03/11/2025"", ""folio"": null, ""rfc_emisor"": null, ""estacion"": ""SERVICIO DEL DESIERTO"", ""moneda"": ""MXN"", ""monto_total"": 1760.0, ""productos"": [{""descripcion"": ""Gasolina"", ""cantidad_litros"": null, ""precio_unitario"": null, ""monto"": null}], ""validation"": {""total_matches_products"": null, ""rfc_format_valid"": null, ""date_format_valid"": null, ""issues"": []}}",,
+20260711T135550Z,2026-07-11T13:55:50.686590+00:00,test,ticket_5.jpg,ocr_llm,gemini-3.1-flash-lite,gemini,zero_shot,0.1666666666666666,False,False,False,False,False,True,False,success,tesseract,0.2863754579999522,1.1011370410000154,1.3875124989999676,337,128,0.00027625,"{""fecha"": null, ""folio"": null, ""rfc_emisor"": null, ""estacion"": null, ""moneda"": ""MXN"", ""monto_total"": null, ""productos"": [], ""validation"": {""total_matches_products"": null, ""rfc_format_valid"": null, ""date_format_valid"": null, ""issues"": [""The provided OCR text is illegible and does not contain valid receipt data.""]}}","30 Mean ron teen
+wees nae
+vo ae it a
+hes a >
+ÓN
+fico 3
+a
+pra cae
+fe es is dt te!
+Soa PO 5 PREFEENCIA
+sone se IT Ps EIS
+se A RESTS PES",
+20260711T135550Z,2026-07-11T13:55:50.686590+00:00,test,ticket_5.jpg,ocr_llm,google/gemma-4-e2b,lmstudio,zero_shot,0.1666666666666666,False,False,False,False,False,True,False,success,tesseract,0.2863754579999522,2.9943667910000613,3.2807422490000135,352,101,0.0,"{""fecha"": null, ""folio"": null, ""rfc_emisor"": null, ""estacion"": null, ""moneda"": ""MXN"", ""monto_total"": null, ""productos"": [], ""validation"": {""total_matches_products"": null, ""rfc_format_valid"": null, ""date_format_valid"": null, ""issues"": []}}","30 Mean ron teen
+wees nae
+vo ae it a
+hes a >
+ÓN
+fico 3
+a
+pra cae
+fe es is dt te!
+Soa PO 5 PREFEENCIA
+sone se IT Ps EIS
+se A RESTS PES",
+20260711T135550Z,2026-07-11T13:55:50.686590+00:00,test,ticket_6.jpg,llm_only,gemini-3.1-flash-lite,gemini,zero_shot,0.6666666666666666,False,False,True,True,False,True,True,success,,0.0,16.38397583400001,16.38397583400001,1323,174,0.00059175,"{""fecha"": ""2025-05-28"", ""folio"": ""238367"", ""rfc_emisor"": null, ""estacion"": ""GASOLINERAS LOS OLIVOS"", ""moneda"": ""MXN"", ""monto_total"": 1500.0, ""productos"": [], ""validation"": {""total_matches_products"": null, ""rfc_format_valid"": false, ""date_format_valid"": true, ""issues"": [""RFC emisor no encontrado en el ticket"", ""Detalle de productos (litros/precio unitario) no disponible en el ticket""]}}",,
+20260711T135550Z,2026-07-11T13:55:50.686590+00:00,test,ticket_6.jpg,llm_only,google/gemma-4-e2b,lmstudio,zero_shot,0.6666666666666666,False,False,True,True,False,True,True,success,,0.0,5.2924041250000755,5.2924041250000755,247,140,0.0,"{""fecha"": ""02/11/15"", ""folio"": ""004041108"", ""rfc_emisor"": null, ""estacion"": ""BBVA"", ""moneda"": ""MXN"", ""monto_total"": 1500.0, ""productos"": [{""descripcion"": null, ""cantidad_litros"": null, ""precio_unitario"": null, ""monto"": null}], ""validation"": {""total_matches_products"": null, ""rfc_format_valid"": null, ""date_format_valid"": null, ""issues"": []}}",,
+20260711T135550Z,2026-07-11T13:55:50.686590+00:00,test,ticket_6.jpg,ocr_llm,gemini-3.1-flash-lite,gemini,zero_shot,0.5,False,False,True,True,False,True,False,success,tesseract,0.994923958999948,12.52376304200004,13.51868700099999,429,139,0.0003157499999999,"{""fecha"": null, ""folio"": null, ""rfc_emisor"": null, ""estacion"": null, ""moneda"": ""MXN"", ""monto_total"": null, ""productos"": [], ""validation"": {""total_matches_products"": null, ""rfc_format_valid"": null, ""date_format_valid"": null, ""issues"": [""The provided OCR text does not contain any readable receipt data such as date, folio, RFC, station name, or financial amounts.""]}}","7 Y ‘i
+NA |
+E Sa Taran ea =e oe
+ee APROBACION: 230357 ""°° Fetes , === a ae
+SS SS SS CARNET DEBIO Byes == > 2
+ee 7S 4 AUTORIZA PEDANTE FU ELécreowIce A Ol o E
+MD La =—
+== \ SS Se a
+a  - | a a
+a So
+o ES ER
+== MB FEE Fe qe :
+3 E E a
+© eS ey Eee Sf = Sse = see
+oe ee ee ;
+a fo 2 * E a. yk
+O a
+po ee ee ee e E",
+20260711T135550Z,2026-07-11T13:55:50.686590+00:00,test,ticket_6.jpg,ocr_llm,google/gemma-4-e2b,lmstudio,zero_shot,0.5,False,False,True,True,False,True,False,success,tesseract,0.994923958999948,2.8620124999999916,3.856936458999939,444,100,0.0,"{""fecha"": null, ""folio"": null, ""rfc_emisor"": null, ""estacion"": null, ""moneda"": ""MXN"", ""monto_total"": null, ""productos"": [], ""validation"": {""total_matches_products"": null, ""rfc_format_valid"": null, ""date_format_valid"": null, ""issues"": []}}","7 Y ‘i
+NA |
+E Sa Taran ea =e oe
+ee APROBACION: 230357 ""°° Fetes , === a ae
+SS SS SS CARNET DEBIO Byes == > 2
+ee 7S 4 AUTORIZA PEDANTE FU ELécreowIce A Ol o E
+MD La =—
+== \ SS Se a
+a  - | a a
+a So
+o ES ER
+== MB FEE Fe qe :
+3 E E a
+© eS ey Eee Sf = Sse = see
+oe ee ee ;
+a fo 2 * E a. yk
+O a
+po ee ee ee e E",
+20260711T135550Z,2026-07-11T13:55:50.686590+00:00,test,ticket_7.jpg,llm_only,gemini-3.1-flash-lite,gemini,zero_shot,0.6666666666666666,False,False,True,True,True,True,False,success,,0.0,6.958385333000024,6.958385333000024,1295,219,0.00065225,"{""fecha"": ""22/05/2025"", ""folio"": ""871855"", ""rfc_emisor"": null, ""estacion"": ""SAN MIGUEL SERVICENTRO SA DE CV"", ""moneda"": ""MXN"", ""monto_total"": 1450.66, ""productos"": [{""descripcion"": ""MAGNA"", ""cantidad_litros"": 60.444, ""precio_unitario"": 24.0, ""monto"": 1450.66}], ""validation"": {""total_matches_products"": true, ""rfc_format_valid"": false, ""date_format_valid"": true, ""issues"": [""RFC emisor no encontrado en el ticket""]}}",,
+20260711T135550Z,2026-07-11T13:55:50.686590+00:00,test,ticket_7.jpg,llm_only,google/gemma-4-e2b,lmstudio,zero_shot,0.6666666666666666,False,False,True,True,True,True,False,success,,0.0,5.715490332999934,5.715490332999934,247,169,0.0,"{""fecha"": ""20/05/2005 11:56"", ""folio"": null, ""rfc_emisor"": null, ""estacion"": null, ""moneda"": ""MXN"", ""monto_total"": 1450.66, ""productos"": [{""descripcion"": null, ""cantidad_litros"": null, ""precio_unitario"": null, ""monto"": null}], ""validation"": {""total_matches_products"": null, ""rfc_format_valid"": null, ""date_format_valid"": null, ""issues"": []}}",,
+20260711T135550Z,2026-07-11T13:55:50.686590+00:00,test,ticket_7.jpg,ocr_llm,gemini-3.1-flash-lite,gemini,zero_shot,0.6666666666666666,False,False,True,True,True,True,False,success,tesseract,0.4552632910000511,1.02672029200005,1.4819835830001011,350,128,0.0002795,"{""fecha"": null, ""folio"": null, ""rfc_emisor"": null, ""estacion"": null, ""moneda"": ""MXN"", ""monto_total"": null, ""productos"": [], ""validation"": {""total_matches_products"": null, ""rfc_format_valid"": null, ""date_format_valid"": null, ""issues"": [""The provided OCR text is illegible and does not contain valid receipt data.""]}}",".%, Pres TD a el QU E SR a
+ty EPA o nl Plana Ye
+Myon, ANN
+Meets: SAU UN nau
+EA ANIOS he ung
+
+mes ta NAAA
+Phy eebaatet SPURT
+Png eee] nl Ue ni
+na, al AN
+Pra ws rs UT
+
+Wet:",
+20260711T135550Z,2026-07-11T13:55:50.686590+00:00,test,ticket_7.jpg,ocr_llm,google/gemma-4-e2b,lmstudio,zero_shot,0.6666666666666666,False,False,True,True,True,True,False,success,tesseract,0.4552632910000511,1.8619425830000864,2.3172058740001376,365,63,0.0,"{""fecha"": null, ""folio"": null, ""rfc_emisor"": null, ""estacion"": null, ""moneda"": ""MXN"", ""monto_total"": null, ""productos"": [], ""validation"": {""total_matches_products"": null, ""rfc_format_valid"": null, ""date_format_valid"": null, ""issues"": []}}",".%, Pres TD a el QU E SR a
+ty EPA o nl Plana Ye
+Myon, ANN
+Meets: SAU UN nau
+EA ANIOS he ung
+
+mes ta NAAA
+Phy eebaatet SPURT
+Png eee] nl Ue ni
+na, al AN
+Pra ws rs UT
+
+Wet:",
+20260711T135550Z,2026-07-11T13:55:50.686590+00:00,test,ticket_8.jpg,llm_only,gemini-3.1-flash-lite,gemini,zero_shot,0.5,False,False,False,True,False,True,True,success,,0.0,3.9519097920000377,3.9519097920000377,1295,214,0.0006447499999999,"{""fecha"": ""2025-05-30"", ""folio"": ""139858460"", ""rfc_emisor"": null, ""estacion"": ""OXXO GAS"", ""moneda"": ""MXN"", ""monto_total"": 400.0, ""productos"": [{""descripcion"": ""MAGNA"", ""cantidad_litros"": 16.674, ""precio_unitario"": 23.99, ""monto"": 400.0}], ""validation"": {""total_matches_products"": true, ""rfc_format_valid"": false, ""date_format_valid"": true, ""issues"": [""RFC emisor no encontrado en el recibo.""]}}",,
+20260711T135550Z,2026-07-11T13:55:50.686590+00:00,test,ticket_8.jpg,llm_only,google/gemma-4-e2b,lmstudio,zero_shot,0.5,False,False,False,True,False,True,True,success,,0.0,4.660000999999966,4.660000999999966,247,139,0.0,"{""fecha"": ""MAY 30 25"", ""folio"": ""13958400"", ""rfc_emisor"": null, ""estacion"": ""COLINAS DE LAGOS B3V"", ""moneda"": ""MXN"", ""monto_total"": 400.0, ""productos"": [{""descripcion"": null, ""cantidad_litros"": null, ""precio_unitario"": null, ""monto"": null}], ""validation"": {""total_matches_products"": null, ""rfc_format_valid"": null, ""date_format_valid"": null, ""issues"": []}}",,
+20260711T135550Z,2026-07-11T13:55:50.686590+00:00,test,ticket_8.jpg,ocr_llm,gemini-3.1-flash-lite,gemini,zero_shot,0.3333333333333333,False,False,False,True,False,True,False,success,tesseract,0.3577643329999773,11.760863708999976,12.118628041999957,323,128,0.00027275,"{""fecha"": null, ""folio"": null, ""rfc_emisor"": null, ""estacion"": null, ""moneda"": ""MXN"", ""monto_total"": null, ""productos"": [], ""validation"": {""total_matches_products"": null, ""rfc_format_valid"": null, ""date_format_valid"": null, ""issues"": [""The provided OCR text is illegible and does not contain valid receipt data.""]}}","E ai o, LS As sr ON
+o o
+Beers an Le oS
+
+Rass: ovo ots UTES eet Sa
+__—-. a
+ee,  Glseetl O
+il as MO",
+20260711T135550Z,2026-07-11T13:55:50.686590+00:00,test,ticket_8.jpg,ocr_llm,google/gemma-4-e2b,lmstudio,zero_shot,0.3333333333333333,False,False,False,True,False,True,False,success,tesseract,0.3577643329999773,1.7354371669999864,2.0932014999999637,338,63,0.0,"{""fecha"": null, ""folio"": null, ""rfc_emisor"": null, ""estacion"": null, ""moneda"": ""MXN"", ""monto_total"": null, ""productos"": [], ""validation"": {""total_matches_products"": null, ""rfc_format_valid"": null, ""date_format_valid"": null, ""issues"": []}}","E ai o, LS As sr ON
+o o
+Beers an Le oS
+
+Rass: ovo ots UTES eet Sa
+__—-. a
+ee,  Glseetl O
+il as MO",
+20260711T135550Z,2026-07-11T13:55:50.686590+00:00,test,ticket_9.jpg,llm_only,gemini-3.1-flash-lite,gemini,zero_shot,0.5,False,False,True,False,False,True,True,success,,0.0,19.594067999999993,19.594067999999993,1295,221,0.00065525,"{""fecha"": ""2025-06-04"", ""folio"": ""3470834"", ""rfc_emisor"": ""IPO9011086S6"", ""estacion"": ""INMUEBLES PORBA S.A. DE C.V"", ""moneda"": ""MXN"", ""monto_total"": 3500.0, ""productos"": [{""descripcion"": ""DIESEL"", ""cantidad_litros"": 145.894, ""precio_unitario"": 23.99, ""monto"": 3500.0}], ""validation"": {""total_matches_products"": true, ""rfc_format_valid"": true, ""date_format_valid"": true, ""issues"": []}}",,
+20260711T135550Z,2026-07-11T13:55:50.686590+00:00,test,ticket_9.jpg,llm_only,google/gemma-4-e2b,lmstudio,zero_shot,0.3333333333333333,False,False,False,False,False,True,True,success,,0.0,6.402004625000018,6.402004625000018,247,209,0.0,"{""fecha"": ""04/06/2025 10:45:45 a.m."", ""folio"": null, ""rfc_emisor"": ""IPO9011086S6"", ""estacion"": ""CARRETERA NACIONAL MEXICO QUERETARO KM 48 LOCAL A BARRIO SAN SEBATIAN TEOLOYUCAN"", ""moneda"": ""MXN"", ""monto_total"": 3500.0, ""productos"": [{""descripcion"": null, ""cantidad_litros"": null, ""precio_unitario"": null, ""monto"": null}], ""validation"": {""total_matches_products"": null, ""rfc_format_valid"": null, ""date_format_valid"": null, ""issues"": []}}",,
+20260711T135550Z,2026-07-11T13:55:50.686590+00:00,test,ticket_9.jpg,ocr_llm,gemini-3.1-flash-lite,gemini,zero_shot,0.3333333333333333,False,False,True,False,False,True,False,success,tesseract,0.3938626670000076,1.3515984580000122,1.7454611250000198,559,272,0.00054775,"{""fecha"": ""2025-06-04"", ""folio"": ""3470834"", ""rfc_emisor"": ""IPO901108586"", ""estacion"": ""INMUEBLES PORBA S.A. DE.C.V"", ""moneda"": ""MXN"", ""monto_total"": 2600.0, ""productos"": [{""descripcion"": ""DIESEL"", ""cantidad_litros"": 145.004, ""precio_unitario"": 20.98, ""monto"": 2600.0}], ""validation"": {""total_matches_products"": true, ""rfc_format_valid"": true, ""date_format_valid"": true, ""issues"": [""OCR indicates IVA AL 18% which is non-standard for Mexico"", ""Total amount in text (2600.00) contradicts the sum of subtotal and IVA listed in OCR""]}}","E.S 13380
+INMUEBLES PORBA S.A. DE.C.V
+CARRETERA NACIONAL MEXICO) QUERETARO KM
+48 LOCAL A BARRIO SAN SEBATIAN TEOLOYUCAN
+EDO MEXICO TEL
+RFC: IPO901108586
+M.PAGO:
+EFECTIVO CHEQUE TARJETA
+04/06/2025 10:45:45 a. m.
+3.1.1.C.:0000110019
+INMUEBLES PORBA S.A. DE.C.V
+No.Ticket:3470834
+Bomba; 08 34006 DIESEL 34006
+Lilros..,.... 145,004
+Precjo...... $20.98
+Imparte Sin IVA $3,026.76
+IVA AL 18%....5473.24
+Importe....... $2,600.00
+TRES MIL QUINIENTOS PESOS 00/100 M:N.
+GRACIAS POR SU PREFERENCIA
+AO O",
+20260711T135550Z,2026-07-11T13:55:50.686590+00:00,test,ticket_9.jpg,ocr_llm,google/gemma-4-e2b,lmstudio,zero_shot,0.3333333333333333,False,False,True,False,False,True,False,success,tesseract,0.3938626670000076,6.244494916999997,6.638357584000005,574,240,0.0,"{""fecha"": ""04/06/2025"", ""folio"": ""3470834"", ""rfc_emisor"": ""IPO901108586"", ""estacion"": ""INMUEBLES PORBA S.A. DE.C.V"", ""moneda"": ""MXN"", ""monto_total"": 2600.0, ""productos"": [{""descripcion"": null, ""cantidad_litros"": null, ""precio_unitario"": null, ""monto"": null}, {""descripcion"": null, ""cantidad_litros"": null, ""precio_unitario"": null, ""monto"": null}], ""validation"": {""total_matches_products"": null, ""rfc_format_valid"": null, ""date_format_valid"": null, ""issues"": []}}","E.S 13380
+INMUEBLES PORBA S.A. DE.C.V
+CARRETERA NACIONAL MEXICO) QUERETARO KM
+48 LOCAL A BARRIO SAN SEBATIAN TEOLOYUCAN
+EDO MEXICO TEL
+RFC: IPO901108586
+M.PAGO:
+EFECTIVO CHEQUE TARJETA
+04/06/2025 10:45:45 a. m.
+3.1.1.C.:0000110019
+INMUEBLES PORBA S.A. DE.C.V
+No.Ticket:3470834
+Bomba; 08 34006 DIESEL 34006
+Lilros..,.... 145,004
+Precjo...... $20.98
+Imparte Sin IVA $3,026.76
+IVA AL 18%....5473.24
+Importe....... $2,600.00
+TRES MIL QUINIENTOS PESOS 00/100 M:N.
+GRACIAS POR SU PREFERENCIA
+AO O",
+20260711T135550Z,2026-07-11T13:55:50.686590+00:00,test,ticket_10.jpg,llm_only,gemini-3.1-flash-lite,gemini,zero_shot,1.0,True,True,True,True,True,True,True,success,,0.0,2.594217708000087,2.594217708000087,1295,214,0.0006447499999999,"{""fecha"": ""28/05/2023"", ""folio"": ""00004846970"", ""rfc_emisor"": null, ""estacion"": null, ""moneda"": ""MXN"", ""monto_total"": 1160.41, ""productos"": [{""descripcion"": ""Magna"", ""cantidad_litros"": 49.4, ""precio_unitario"": 23.49, ""monto"": 1160.41}], ""validation"": {""total_matches_products"": true, ""rfc_format_valid"": false, ""date_format_valid"": true, ""issues"": [""RFC emisor no encontrado en el recibo.""]}}",,
+20260711T135550Z,2026-07-11T13:55:50.686590+00:00,test,ticket_10.jpg,llm_only,google/gemma-4-e2b,lmstudio,zero_shot,1.0,True,True,True,True,True,True,True,success,,0.0,4.531774000000041,4.531774000000041,247,111,0.0,"{""fecha"": null, ""folio"": null, ""rfc_emisor"": null, ""estacion"": null, ""moneda"": ""MXN"", ""monto_total"": 1160.41, ""productos"": [{""descripcion"": null, ""cantidad_litros"": null, ""precio_unitario"": null, ""monto"": null}], ""validation"": {""total_matches_products"": null, ""rfc_format_valid"": null, ""date_format_valid"": null, ""issues"": []}}",,
+20260711T135550Z,2026-07-11T13:55:50.686590+00:00,test,ticket_10.jpg,ocr_llm,gemini-3.1-flash-lite,gemini,zero_shot,0.8333333333333334,False,True,True,True,True,True,False,success,tesseract,0.2291328329999942,1.071907083000042,1.301039916000036,374,215,0.000416,"{""fecha"": null, ""folio"": null, ""rfc_emisor"": null, ""estacion"": null, ""moneda"": ""MXN"", ""monto_total"": 1169.41, ""productos"": [{""descripcion"": ""MAGNA"", ""cantidad_litros"": 49.4, ""precio_unitario"": 23.49, ""monto"": 1160.41}], ""validation"": {""total_matches_products"": false, ""rfc_format_valid"": false, ""date_format_valid"": false, ""issues"": [""Total does not match product sum"", ""Missing date"", ""Missing folio"", ""Missing RFC"", ""Missing station name""]}}","A Ion 0521)
+sean vo CAN LOAD UM PRECIO LRPORIE
+joa (CLAVE PROD. 32025)
+
+49.400 LIR 23.49 1160.41
+
+palo 1004.24
+TOTAL: 1169.41
+dun ntl clento sesenta pesos 41/1(",
+20260711T135550Z,2026-07-11T13:55:50.686590+00:00,test,ticket_10.jpg,ocr_llm,google/gemma-4-e2b,lmstudio,zero_shot,0.8333333333333334,False,True,True,True,True,True,False,success,tesseract,0.2291328329999942,3.6499644169999783,3.879097249999973,389,128,0.0,"{""fecha"": null, ""folio"": null, ""rfc_emisor"": null, ""estacion"": null, ""moneda"": ""MXN"", ""monto_total"": 1169.41, ""productos"": [{""descripcion"": null, ""cantidad_litros"": null, ""precio_unitario"": null, ""monto"": null}], ""validation"": {""total_matches_products"": null, ""rfc_format_valid"": null, ""date_format_valid"": null, ""issues"": []}}","A Ion 0521)
+sean vo CAN LOAD UM PRECIO LRPORIE
+joa (CLAVE PROD. 32025)
+
+49.400 LIR 23.49 1160.41
+
+palo 1004.24
+TOTAL: 1169.41
+dun ntl clento sesenta pesos 41/1(",

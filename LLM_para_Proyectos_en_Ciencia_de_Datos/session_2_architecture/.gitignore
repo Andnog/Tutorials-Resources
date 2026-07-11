@@ -28,10 +28,6 @@ htmlcov/
 data/raw_receipts/*
 !data/raw_receipts/.gitkeep
 
-# --- Salidas generadas por experimentos ---
-data/outputs/*
-!data/outputs/.gitkeep
-
 # --- Sistema operativo e IDE ---
 .DS_Store
 Thumbs.db

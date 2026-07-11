@@ -1,0 +1,41 @@
+run_id,created_at,dataset,file_name,pipeline,model,backend,prompt_variant,accuracy,passed,match_fecha,match_folio,match_rfc_emisor,match_estacion,match_moneda,match_monto_total,status,ocr_engine,ocr_latency_seconds,model_latency_seconds,latency_seconds,input_tokens,output_tokens,estimated_cost,extraction_json,ocr_text,error
+20260711T070413Z,2026-07-11T07:04:13.330526+00:00,test,ticket_1.jpg,llm_only,gemini-3.1-flash-lite,gemini,few_shot,0.5,False,False,True,False,False,True,True,success,,0.0,1.4150125829983153,1.4150125829983153,1507,221,0.00070825,"{""fecha"": ""2025-06-03"", ""folio"": ""1174049"", ""rfc_emisor"": ""SGC111213TG9"", ""estacion"": ""SERVICIO GASOLINERO DE LA COSTA, S.A. DE"", ""moneda"": ""MXN"", ""monto_total"": 1571.82, ""productos"": [{""descripcion"": ""MAGNA"", ""cantidad_litros"": 65.005, ""precio_unitario"": 24.18, ""monto"": 1571.82}], ""validation"": {""total_matches_products"": true, ""rfc_format_valid"": true, ""date_format_valid"": true, ""issues"": []}}",,
+20260711T070413Z,2026-07-11T07:04:13.330526+00:00,test,ticket_1.jpg,llm_only,zai-org/glm-4.6v-flash,lmstudio,few_shot,0.3333333333333333,False,False,False,False,False,True,True,success,,0.0,13.952026791004755,13.952026791004755,392,156,0.0,"{""fecha"": ""2025-08-06"", ""folio"": ""1174040"", ""rfc_emisor"": ""PL/20676/LP/ES/2017"", ""estacion"": ""SERVICIO GASOLINERO DE LA COSA, S.A. DE C.V."", ""moneda"": ""MXN"", ""monto_total"": 1571.82, ""productos"": [{""descripcion"": ""MAGNA"", ""cantidad_litros"": 65.005, ""precio_unitario"": 21.7982, ""monto"": 1421.82}], ""validation"": {""total_matches_products"": true, ""rfc_format_valid"": true, ""date_format_valid"": true, ""issues"": []}}",,
+20260711T070413Z,2026-07-11T07:04:13.330526+00:00,test,ticket_1.jpg,ocr_llm,gemini-3.1-flash-lite,gemini,few_shot,0.16666666666666666,False,False,False,False,False,True,False,success,tesseract,0.2875846669994644,1.0848546670022188,1.3724393340016832,563,126,0.00032974999999999997,"{""fecha"": null, ""folio"": null, ""rfc_emisor"": null, ""estacion"": null, ""moneda"": ""MXN"", ""monto_total"": null, ""productos"": [], ""validation"": {""total_matches_products"": null, ""rfc_format_valid"": null, ""date_format_valid"": null, ""issues"": [""OCR text is illegible and does not contain valid receipt data.""]}}","601 General de Loy Personas Hors
+‘te
+
+fai nee
+Hol: Sas a (cont 40
+e
+ds
+Te no
+
+‘i oR ME Se
+PRODUCTO CANTIDAD UM. PRECIO IMPORTE
+ha Pers a,
+
+it ie
+even cc
+sou re:
+“tes hs, Fl",
+20260711T070413Z,2026-07-11T07:04:13.330526+00:00,test,ticket_1.jpg,ocr_llm,zai-org/glm-4.6v-flash,lmstudio,few_shot,0.16666666666666666,False,False,False,False,False,True,False,success,tesseract,0.2875846669994644,5.410769624999375,5.6983542919988395,505,71,0.0,"{""fecha"": null, ""folio"": null, ""rfc_emisor"": null, ""estacion"": null, ""moneda"": ""MXN"", ""monto_total"": null, ""productos"": [], ""validation"": {""total_matches_products"": true, ""rfc_format_valid"": true, ""date_format_valid"": true, ""issues"": []}}","601 General de Loy Personas Hors
+‘te
+
+fai nee
+Hol: Sas a (cont 40
+e
+ds
+Te no
+
+‘i oR ME Se
+PRODUCTO CANTIDAD UM. PRECIO IMPORTE
+ha Pers a,
+
+it ie
+even cc
+sou re:
+“tes hs, Fl",
+20260711T070413Z,2026-07-11T07:04:13.330526+00:00,test,ticket_2.jpg,llm_only,gemini-3.1-flash-lite,gemini,few_shot,0.6666666666666666,False,False,True,True,True,True,False,success,,0.0,1.7094980830006534,1.7094980830006534,1507,206,0.0006857499999999999,"{""fecha"": ""2025-06-04"", ""folio"": ""530036"", ""rfc_emisor"": ""GAF220603TC4"", ""estacion"": ""GAFSACOMM"", ""moneda"": ""MXN"", ""monto_total"": 370.83, ""productos"": [{""descripcion"": ""Premium"", ""cantidad_litros"": 14.839, ""precio_unitario"": 24.99, ""monto"": 370.83}], ""validation"": {""total_matches_products"": true, ""rfc_format_valid"": true, ""date_format_valid"": true, ""issues"": []}}",,
+20260711T070413Z,2026-07-11T07:04:13.330526+00:00,test,ticket_2.jpg,llm_only,zai-org/glm-4.6v-flash,lmstudio,few_shot,0.5,False,False,False,True,True,True,False,success,,0.0,12.525056416001462,12.525056416001462,392,134,0.0,"{""fecha"": ""2023-11-15"", ""folio"": ""E14189"", ""rfc_emisor"": null, ""estacion"": ""Pemex 3841"", ""moneda"": ""MXN"", ""monto_total"": 32.1, ""productos"": [{""descripcion"": ""Premium (Línea PUD)"", ""cantidad_litros"": 14.53, ""precio_unitario"": 22.1, ""monto"": 318.03}], ""validation"": {""total_matches_products"": true, ""rfc_format_valid"": null, ""date_format_valid"": true, ""issues"": []}}",,
+20260711T070413Z,2026-07-11T07:04:13.330526+00:00,test,ticket_2.jpg,ocr_llm,gemini-3.1-flash-lite,gemini,few_shot,0.5,False,False,False,True,True,True,False,success,tesseract,0.2617178750006133,0.8953241670023999,1.1570420420030132,491,117,0.00029825,"{""fecha"": null, ""folio"": null, ""rfc_emisor"": null, ""estacion"": null, ""moneda"": ""MXN"", ""monto_total"": null, ""productos"": [], ""validation"": {""total_matches_products"": null, ""rfc_format_valid"": null, ""date_format_valid"": null, ""issues"": [""No readable data found in the provided OCR text.""]}}",‘,
+20260711T070413Z,2026-07-11T07:04:13.330526+00:00,test,ticket_2.jpg,ocr_llm,zai-org/glm-4.6v-flash,lmstudio,few_shot,0.5,False,False,False,True,True,True,False,success,tesseract,0.2617178750006133,5.053718166003819,5.315436041004432,433,71,0.0,"{""fecha"": null, ""folio"": null, ""rfc_emisor"": null, ""estacion"": null, ""moneda"": ""MXN"", ""monto_total"": null, ""productos"": [], ""validation"": {""total_matches_products"": true, ""rfc_format_valid"": true, ""date_format_valid"": true, ""issues"": []}}",‘,
