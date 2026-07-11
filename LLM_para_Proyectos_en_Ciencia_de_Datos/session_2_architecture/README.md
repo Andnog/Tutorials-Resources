@@ -131,24 +131,6 @@ Recarga cualquier CSV histórico sin volver a llamar a ningún modelo: mismas ta
 
 ![Pestaña Saved runs](docs/img/dashboard_05_saved_runs.png)
 
-## Reporte HTML estático (ejemplo para alumnos)
-
-Para ver un ejemplo de resultados **sin instalar ni correr nada**, abre en el navegador:
-
-```text
-docs/report/index.html
-```
-
-Es una réplica estática de la pestaña "All models": métricas, tablas comparativas, gráficas interactivas (Plotly) y heatmaps por ticket. Se versiona en git (el `.gitignore` no lo excluye) precisamente para que los alumnos lo tengan como referencia al clonar el repositorio. Solo contiene métricas agregadas y nombres de archivo — no incluye JSON extraído ni texto OCR, que pueden contener datos fiscales.
-
-![Reporte estático](docs/img/reporte_estatico.png)
-
-Para regenerarlo con los resultados acumulados actuales:
-
-```bash
-uv run python tools/build_report.py
-```
-
 ## Línea base con OCR
 
 El experimento final compara ambas estrategias de ejecución para cada modelo seleccionado:
@@ -165,6 +147,17 @@ brew install tesseract tesseract-lang
 Para otra ubicación de instalación, define `TESSERACT_CMD` en `.env`.
 
 Cada run guarda un CSV inmutable `data/outputs/receipt_comparison_<run_id>.csv` con latencia de OCR, latencia del modelo, latencia total, tokens, costo, exactitud por campo, errores de parseo, texto OCR y JSON extraído. Además, cada run se anexa al acumulado `receipt_comparison_all.csv`.
+
+### 📌 Hallazgo del experimento: OCR reduce costos, pero aquí no conviene
+
+Tras correr la matriz completa sobre los tickets del curso, la evidencia es consistente:
+
+- **`ocr_llm` sí disminuye costos** — el texto plano del OCR usa muchos menos tokens que mandar la imagen — pero tiene **peor desempeño** en todos los modelos probados.
+- **La causa son las imágenes**: los tickets son fotos poco claras, poco nítidas y mal tomadas (arrugas, ángulo, iluminación). El OCR tradicional degrada la información antes de que el LLM pueda interpretarla; el modelo multimodal "ve" el ticket completo y recupera contexto que el OCR pierde.
+- **Este es el caso donde ni la estrategia híbrida recomendada aplica.** La recomendación general (OCR barato + LLM) es válida para documentos escaneados con buena calidad, no para fotos de tickets como estas.
+- **Conclusión con evidencia**: se justifica el pipeline `llm_only` aunque el costo por ticket prácticamente se duplique, porque los errores bajan a **menos de la mitad**. El costo por ticket no se evalúa solo: se evalúa contra el costo de un error (un RFC mal validado, un monto mal registrado). Duplicar centavos por ticket a cambio de la mitad de errores es un buen negocio.
+
+Los números que sustentan el hallazgo están en la pestaña **All models** del dashboard (tabla de comparación: columnas `accuracy` y `cost_per_receipt` por pipeline), alimentada por el acumulado `data/outputs/receipt_comparison_all.csv` incluido en el repositorio.
 
 ## Reglas de seguridad
 
