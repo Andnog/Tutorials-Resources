@@ -1,6 +1,6 @@
 # Tema 4: Laboratorio de agentes y diseño experimental
 
-Este proyecto es independiente de `../sessions/`. Implementa un agente de gestión de incidencias con Google ADK, SQLite ficticio, MLflow local y una interfaz Streamlit para ejecutar E01--E11 sin cambiar prompts ni commits.
+Este proyecto es independiente de `../prompting_models/`. Implementa un agente de gestión de incidencias con Google ADK, SQLite ficticio, MLflow local y una interfaz Streamlit para ejecutar E01--E11 sin cambiar prompts ni commits.
 
 Los prompts no están embebidos en Python: son [`prompts/v1_general.md`](prompts/v1_general.md) y [`prompts/v2_operational.md`](prompts/v2_operational.md), por lo que cada cambio es revisable y versionable.
 

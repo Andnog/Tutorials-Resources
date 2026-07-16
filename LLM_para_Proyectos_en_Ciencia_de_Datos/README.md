@@ -6,9 +6,10 @@ Materiales del curso: código, notebooks y recursos por sesión.
 
 | Sesión | Carpeta | Tema |
 |---|---|---|
-| 2 | [`sessions/`](sessions/) | Arquitectura LLM, prompting y selección de modelos — extracción y validación de tickets con modelos locales (LM Studio) y Gemini, evaluación comparativa, dashboard en Streamlit |
+| 2 | [`prompting_models/`](prompting_models/) | Arquitectura LLM, prompting y selección de modelos — extracción y validación de tickets con modelos locales (LM Studio) y Gemini, evaluación comparativa, dashboard en Streamlit |
 | 3 | [Notebook en Kaggle](https://www.kaggle.com/code/andreinog/full-ft-lora-qlora) | Fine-tuning completo, LoRA y QLoRA — cuaderno práctico con un modelo pequeño para experimentar y comparar desempeño en resultados, uso de VRAM y rendimiento general |
 | 4 | [`agents/`](agents/) | Diseño experimental y control de versiones en sistemas de agentes — ADK, herramientas, SQLite, guardrails y MLflow |
+| Extra | [`agent_chatbot/`](agent_chatbot/) | Chatbot empresarial multiagente con ADK — orquestador, especialistas (datos, web, acciones), SQLite y servidor MCP |
 | Tutorial | [`langgraph_tutorial/`](langgraph_tutorial/) | Mini tutorial: workflow determinista vs. agente con herramientas usando LangGraph y LM Studio |
 
 ## Cómo empezar
