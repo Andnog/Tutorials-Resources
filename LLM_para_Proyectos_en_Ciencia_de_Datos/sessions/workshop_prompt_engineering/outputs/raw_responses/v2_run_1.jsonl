@@ -1,0 +1,10 @@
+{"complaint_id": "C204", "raw_response": "{\n  \"branch\": \"home\",\n  \"severity\": 1,\n  \"escalate_to_human\": false\n}"}
+{"complaint_id": "C267", "raw_response": "{\n  \"branch\": \"life\",\n  \"severity\": 2,\n  \"escalate_to_human\": false\n}"}
+{"complaint_id": "C153", "raw_response": "{\n  \"branch\": \"home\",\n  \"severity\": 2,\n  \"escalate_to_human\": true\n}"}
+{"complaint_id": "C010", "raw_response": "{\n  \"branch\": \"auto\",\n  \"severity\": 3,\n  \"escalate_to_human\": true\n}"}
+{"complaint_id": "C234", "raw_response": "{\n  \"branch\": \"life\",\n  \"severity\": 2,\n  \"escalate_to_human\": true\n}"}
+{"complaint_id": "C227", "raw_response": "{\n  \"branch\": \"medical_expenses\",\n  \"severity\": 3,\n  \"escalate_to_human\": true\n}"}
+{"complaint_id": "C197", "raw_response": "{\n  \"branch\": \"life\",\n  \"severity\": 2,\n  \"escalate_to_human\": false\n}"}
+{"complaint_id": "C110", "raw_response": "{\n  \"branch\": \"medical_expenses\",\n  \"severity\": 3,\n  \"escalate_to_human\": true\n}"}
+{"complaint_id": "C006", "raw_response": "{\n  \"branch\": \"life\",\n  \"severity\": 1,\n  \"escalate_to_human\": false\n}"}
+{"complaint_id": "C176", "raw_response": "{\n  \"branch\": \"life\",\n  \"severity\": 2,\n  \"escalate_to_human\": false\n}"}

@@ -1,0 +1,51 @@
+version,complaint_id,complaint_text,expected_branch,expected_severity,expected_escalate_to_human,predicted_branch,predicted_severity,predicted_escalate_to_human,valid_json,schema_valid,latency_seconds,prompt_tokens,output_tokens,raw_response,error,branch_correct,severity_correct,escalation_correct,all_correct
+v3_internal_verification,C204,Quiero conocer el estatus de mi reclamacion por el danio en la cocina. Quedo al pendiente de sus comentarios.,home,1,False,home,1,False,True,True,0.590743000000657,724,30,"{
+  ""branch"": ""home"",
+  ""severity"": 1,
+  ""escalate_to_human"": false
+}",,True,True,True,True
+v3_internal_verification,C267,Estoy muy inconforme con el servicio. Me duplicaron el cobro de la prima de mi seguro de vida. Esta situacion no puede seguir asi.,life,2,False,life,2,False,True,True,0.5821441250000134,728,30,"{
+  ""branch"": ""life"",
+  ""severity"": 2,
+  ""escalate_to_human"": false
+}",,True,True,True,True
+v3_internal_verification,C153,Estoy muy inconforme con el servicio. Llevo cinco reportes por la misma filtracion y sigue sin resolverse. Esta situacion no puede seguir asi.,home,2,True,home,2,True,True,True,0.6465857080002024,730,30,"{
+  ""branch"": ""home"",
+  ""severity"": 2,
+  ""escalate_to_human"": true
+}",,True,True,True,True
+v3_internal_verification,C010,Buenas tardes. El proveedor que mando la aseguradora me pidio dinero en efectivo para agilizar el tramite; parece un fraude.,home,3,True,auto,3,True,True,True,0.6255525409997063,723,30,"{
+  ""branch"": ""auto"",
+  ""severity"": 3,
+  ""escalate_to_human"": true
+}",,False,True,True,False
+v3_internal_verification,C234,He llamado seis veces para el tramite del seguro de vida de mi hermano y nadie da seguimiento. Espero una respuesta pronta.,life,2,True,life,2,True,True,True,0.7120252499998969,721,30,"{
+  ""branch"": ""life"",
+  ""severity"": 2,
+  ""escalate_to_human"": true
+}",,True,True,True,True
+v3_internal_verification,C227,Negaron la autorizacion de mi quimioterapia y mi tratamiento no puede esperar. Espero una respuesta pronta.,medical_expenses,3,True,medical_expenses,3,True,True,True,1.5412451669999427,719,32,"{
+  ""branch"": ""medical_expenses"",
+  ""severity"": 3,
+  ""escalate_to_human"": true
+}",,True,True,True,True
+v3_internal_verification,C197,Estoy muy inconforme con el servicio. El asesor no me ha enviado el endoso de mi poliza de vida que prometio hace semanas. Esta situacion no puede seguir asi.,life,2,False,life,2,False,True,True,0.6472407090004708,734,30,"{
+  ""branch"": ""life"",
+  ""severity"": 2,
+  ""escalate_to_human"": false
+}",,True,True,True,True
+v3_internal_verification,C110,Buenas tardes. El hospital no reconoce mi poliza y necesito una cirugia urgente.,medical_expenses,3,True,medical_expenses,3,True,True,True,0.565033584000048,714,32,"{
+  ""branch"": ""medical_expenses"",
+  ""severity"": 3,
+  ""escalate_to_human"": true
+}",,True,True,True,True
+v3_internal_verification,C006,Que documentos necesito para agregar a mi esposa como beneficiaria?,life,1,False,life,1,False,True,True,0.869253416999527,709,30,"{
+  ""branch"": ""life"",
+  ""severity"": 1,
+  ""escalate_to_human"": false
+}",,True,True,True,True
+v3_internal_verification,C176,Buenas tardes. El asesor no me ha enviado el endoso de mi poliza de vida que prometio hace semanas.,life,2,False,life,2,False,True,True,0.611912041999858,721,30,"{
+  ""branch"": ""life"",
+  ""severity"": 2,
+  ""escalate_to_human"": false
+}",,True,True,True,True

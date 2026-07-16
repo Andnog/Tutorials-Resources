@@ -6,7 +6,9 @@ Materiales del curso: código, notebooks y recursos por sesión.
 
 | Sesión | Carpeta | Tema |
 |---|---|---|
-| 2 | [`session_2_architecture/`](session_2_architecture/) | Arquitectura LLM, prompting y selección de modelos — extracción y validación de tickets con modelos locales (LM Studio) y Gemini, evaluación comparativa, dashboard en Streamlit |
+| 2 | [`sessions/`](sessions/) | Arquitectura LLM, prompting y selección de modelos — extracción y validación de tickets con modelos locales (LM Studio) y Gemini, evaluación comparativa, dashboard en Streamlit |
+| 4 | [`agents/`](agents/) | Diseño experimental y control de versiones en sistemas de agentes — ADK, herramientas, SQLite, guardrails y MLflow |
+| Tutorial | [`langgraph_tutorial/`](langgraph_tutorial/) | Mini tutorial: workflow determinista vs. agente con herramientas usando LangGraph y LM Studio |
 
 ## Cómo empezar
 

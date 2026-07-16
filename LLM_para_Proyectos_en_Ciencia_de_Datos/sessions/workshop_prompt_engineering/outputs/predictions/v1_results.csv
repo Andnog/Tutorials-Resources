@@ -1,0 +1,80 @@
+version,complaint_id,complaint_text,expected_branch,expected_severity,expected_escalate_to_human,predicted_branch,predicted_severity,predicted_escalate_to_human,valid_json,schema_valid,latency_seconds,prompt_tokens,output_tokens,raw_response,error
+v1_generic,C204,Quiero conocer el estatus de mi reclamacion por el danio en la cocina. Quedo al pendiente de sus comentarios.,home,1,False,,,,False,False,0.9750115410006401,71,102,"Here is the classification for the complaint provided:
+
+*   **Branch:** Claims (Reclamaciones)
+*   **Severity:** Low
+*   **Human Review Required:** No (This is a standard status inquiry that can be handled by an automated system or a chatbot by retrieving the claim status from the database).
+
+**Reasoning:** The customer is simply requesting an update on an existing claim. There is no expression of frustration, urgency, or threat of cancellation, making it a routine administrative request.",No JSON object was found.
+v1_generic,C267,Estoy muy inconforme con el servicio. Me duplicaron el cobro de la prima de mi seguro de vida. Esta situacion no puede seguir asi.,life,2,False,,,,False,False,0.9570214590003161,75,105,"Here is the classification of the complaint:
+
+*   **Branch:** Billing / Financial (Cobros y Facturación)
+*   **Severity:** High (Alta)
+*   **Human Review Required:** Yes
+
+**Reasoning:**
+The customer is reporting a financial error (double billing). This is a high-priority issue because it involves the customer's money and potential loss of trust. A human agent needs to verify the transaction, process a refund or adjustment, and provide a formal explanation to prevent churn.",No JSON object was found.
+v1_generic,C153,Estoy muy inconforme con el servicio. Llevo cinco reportes por la misma filtracion y sigue sin resolverse. Esta situacion no puede seguir asi.,home,2,True,,,,False,False,1.1745186250000188,77,163,"Here is the classification for the complaint provided:
+
+*   **Branch:** Claims / Maintenance (Repairs)
+*   **Severity:** High
+*   **Human Review Required:** Yes
+
+### Reasoning:
+*   **Branch:** The issue relates to a recurring physical damage problem (a leak) that has not been addressed by the company's repair or claims department.
+*   **Severity:** It is classified as **High** because the customer mentions having filed five previous reports without a resolution. This indicates a failure in service recovery, a high risk of customer churn, and potential for further property damage.
+*   **Human Review:** A human agent should review this immediately to escalate the repair request, apologize for the lack of follow-through, and prevent further escalation or legal/regulatory complaints.",No JSON object was found.
+v1_generic,C010,Buenas tardes. El proveedor que mando la aseguradora me pidio dinero en efectivo para agilizar el tramite; parece un fraude.,home,3,True,,,,False,False,0.7850795419999486,70,92,"Here is the classification for the complaint provided:
+
+*   **Branch:** Fraud / Ethics & Compliance
+*   **Severity:** High
+*   **Human Review Required:** Yes
+
+**Reasoning:** The customer is reporting a potential case of extortion or bribery by a service provider associated with the company. This represents a significant legal and reputational risk, as well as a direct violation of company policy, requiring immediate investigation by the internal audit or compliance department.",No JSON object was found.
+v1_generic,C234,He llamado seis veces para el tramite del seguro de vida de mi hermano y nadie da seguimiento. Espero una respuesta pronta.,life,2,True,,,,False,False,1.0910704999996597,68,153,"Aquí tienes la clasificación de la queja:
+
+*   **Rama (Departamento):** Seguros de Vida / Atención al Cliente (Gestión de trámites).
+*   **Severidad:** Media-Alta.
+*   **¿Requiere revisión humana?:** Sí.
+
+**Justificación:**
+La severidad es **Media-Alta** debido a la reiteración del problema (seis llamadas sin respuesta), lo que indica una falla clara en el proceso de seguimiento y un alto nivel de frustración por parte del cliente. Se requiere **revisión humana** porque el cliente está solicitando una resolución urgente sobre un trámite de seguro de vida, lo cual es un tema sensible que no puede ser resuelto únicamente por respuestas automatizadas.",No JSON object was found.
+v1_generic,C227,Negaron la autorizacion de mi quimioterapia y mi tratamiento no puede esperar. Espero una respuesta pronta.,medical_expenses,3,True,,,,False,False,1.0068768329992963,66,110,"Here is the classification for the complaint provided:
+
+*   **Branch:** Health Insurance (Medical Authorization/Claims)
+*   **Severity:** Critical (High)
+*   **Human Review Required:** Yes
+
+**Reasoning:** The complaint involves the denial of a life-critical medical procedure (chemotherapy). Because the patient explicitly states that their treatment ""cannot wait,"" this represents a high risk of medical complications and potential legal/reputational liability for the company. It requires immediate intervention by a human agent to review the authorization status.",No JSON object was found.
+v1_generic,C197,Estoy muy inconforme con el servicio. El asesor no me ha enviado el endoso de mi poliza de vida que prometio hace semanas. Esta situacion no puede seguir asi.,life,2,False,,,,False,False,1.0898196660000394,81,163,"Here is the classification for the complaint provided:
+
+*   **Branch:** Customer Service / Policy Administration (Life Insurance)
+*   **Severity:** Medium
+*   **Human Review Required:** Yes
+
+### Reasoning:
+*   **Branch:** The issue pertains to a failure in administrative follow-up regarding a policy document (endoso).
+*   **Severity:** It is classified as **Medium** because, while it does not involve a claim denial or a financial loss, it indicates a breakdown in service commitment and a lack of responsiveness that has persisted for ""weeks,"" which risks customer churn.
+*   **Human Review:** Yes, a human should review this to ensure the document is generated and sent immediately, and to perform service recovery to prevent the customer from canceling their policy due to poor service.",No JSON object was found.
+v1_generic,C110,Buenas tardes. El hospital no reconoce mi poliza y necesito una cirugia urgente.,medical_expenses,3,True,,,,False,False,0.8551810419994581,61,93,"Here is the classification for the complaint provided:
+
+*   **Branch:** Health Insurance / Claims & Coverage
+*   **Severity:** Critical (High)
+*   **Human Review Required:** Yes
+
+**Reasoning:** The customer is reporting a denial of coverage for an **urgent surgery**. This represents a high risk of medical complications, potential legal liability for the company, and significant customer distress. It requires immediate intervention by a claims specialist or a patient advocate.",No JSON object was found.
+v1_generic,C006,Que documentos necesito para agregar a mi esposa como beneficiaria?,life,1,False,,,,False,False,0.8706375000001572,56,103,"Here is the classification for the received message:
+
+*   **Branch:** Customer Service / Policy Administration (Inquiry)
+*   **Severity:** Low
+*   **Human Review Required:** No (This is a standard informational request that can be handled by an automated FAQ bot or a template response).
+
+**Reasoning:** The customer is asking for information regarding a policy update (adding a beneficiary). It does not express dissatisfaction, urgency, or a claim dispute, so it does not require immediate human intervention.",No JSON object was found.
+v1_generic,C176,Buenas tardes. El asesor no me ha enviado el endoso de mi poliza de vida que prometio hace semanas.,life,2,False,,,,False,False,0.8295187499998065,68,119,"Here is the classification for the complaint provided:
+
+*   **Branch:** Customer Service / Policy Administration
+*   **Severity:** Low
+*   **Human Review Required:** No (This can be handled by an automated follow-up or a standard notification to the assigned agent).
+
+**Reasoning:**
+The complaint refers to a delay in administrative documentation (an endorsement). While it reflects poor service and a lack of follow-through by the agent, it does not involve a claim denial, a financial loss, or a legal threat, which would typically trigger an immediate human intervention or escalation.",No JSON object was found.

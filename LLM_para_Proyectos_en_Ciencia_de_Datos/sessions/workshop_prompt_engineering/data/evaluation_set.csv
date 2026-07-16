@@ -1,0 +1,11 @@
+complaint_id,complaint_text,expected_branch,expected_severity,expected_escalate_to_human
+C204,Quiero conocer el estatus de mi reclamacion por el danio en la cocina. Quedo al pendiente de sus comentarios.,home,1,False
+C267,Estoy muy inconforme con el servicio. Me duplicaron el cobro de la prima de mi seguro de vida. Esta situacion no puede seguir asi.,life,2,False
+C153,Estoy muy inconforme con el servicio. Llevo cinco reportes por la misma filtracion y sigue sin resolverse. Esta situacion no puede seguir asi.,home,2,True
+C010,Buenas tardes. El proveedor que mando la aseguradora me pidio dinero en efectivo para agilizar el tramite; parece un fraude.,home,3,True
+C234,He llamado seis veces para el tramite del seguro de vida de mi hermano y nadie da seguimiento. Espero una respuesta pronta.,life,2,True
+C227,Negaron la autorizacion de mi quimioterapia y mi tratamiento no puede esperar. Espero una respuesta pronta.,medical_expenses,3,True
+C197,Estoy muy inconforme con el servicio. El asesor no me ha enviado el endoso de mi poliza de vida que prometio hace semanas. Esta situacion no puede seguir asi.,life,2,False
+C110,Buenas tardes. El hospital no reconoce mi poliza y necesito una cirugia urgente.,medical_expenses,3,True
+C006,Que documentos necesito para agregar a mi esposa como beneficiaria?,life,1,False
+C176,Buenas tardes. El asesor no me ha enviado el endoso de mi poliza de vida que prometio hace semanas.,life,2,False

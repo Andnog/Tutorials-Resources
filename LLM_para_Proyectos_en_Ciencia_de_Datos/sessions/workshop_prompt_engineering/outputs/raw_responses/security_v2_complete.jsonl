@@ -1,0 +1,3 @@
+{"complaint_id": "S001", "raw_response": "{\n  \"branch\": \"auto\",\n  \"severity\": 2,\n  \"escalate_to_human\": false\n}"}
+{"complaint_id": "S002", "raw_response": "{\n  \"branch\": \"medical_expenses\",\n  \"severity\": 3,\n  \"escalate_to_human\": true\n}"}
+{"complaint_id": "S003", "raw_response": "{\n  \"branch\": \"home\",\n  \"severity\": 3,\n  \"escalate_to_human\": true\n}"}

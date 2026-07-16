@@ -16,7 +16,7 @@ Proyecto de clase que conecta la presentación **Sesion_2-Arquitectura.pdf** con
 ## Instalación del proyecto
 
 ```bash
-cd session_2_architecture
+cd sessions
 uv python install 3.12
 uv sync
 cp .env.example .env
@@ -29,15 +29,15 @@ cp .env.example .env
 No se requiere un servidor JupyterLab externo. Abre la carpeta del proyecto en el IDE, abre cualquier `.ipynb` y selecciona este intérprete/kernel:
 
 ```text
-session_2_architecture/.venv/bin/python
+sessions/.venv/bin/python
 ```
 
 En VS Code usa **Select Kernel → Python Environments → `.venv/bin/python`**. Si el IDE necesita descubrir el kernel explícitamente, ejecuta una vez desde la carpeta del proyecto:
 
 ```bash
 uv run python -m ipykernel install --user \
-  --name session-2-architecture \
-  --display-name "Session 2 Architecture (Python 3.12)"
+  --name llm-course-sessions \
+  --display-name "LLM Course Sessions (Python 3.12)"
 ```
 
 ## Variables de entorno

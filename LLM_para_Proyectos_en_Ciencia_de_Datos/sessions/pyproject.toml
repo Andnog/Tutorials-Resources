@@ -1,7 +1,7 @@
 [project]
-name = "session-2-architecture"
+name = "llm-course-sessions"
 version = "0.1.0"
-description = "Session 2 notebooks for LLM architecture, model selection, and receipt validation."
+description = "Course notebooks for all sessions: LLM architecture, prompting, model selection, and receipt validation."
 requires-python = ">=3.12,<3.13"
 dependencies = [
     "ipykernel>=6.29.0",
@@ -15,6 +15,12 @@ dependencies = [
     "pytesseract>=0.3.13",
     "google-genai>=2.11.0",
     "matplotlib>=3.11.0",
+    "scikit-learn>=1.5.0",
+    "tqdm>=4.66.0",
+    "pydantic>=2.9.0",
+    "ollama>=0.6.2",
+    "anthropic>=0.116.0",
+    "openai>=2.45.0",
 ]
 
 [build-system]

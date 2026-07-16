@@ -1,0 +1,4 @@
+version,total_records,valid_json_rate,schema_valid_rate,mean_latency_seconds,p95_latency_seconds,branch_accuracy,severity_accuracy,severity_mae,escalation_precision,escalation_recall,escalation_f1,escalation_false_negatives
+v1_generic,10,0.0,0.0,0.963473545799934,1.1369669687498571,0.0,0.0,,0.0,0.0,0.0,
+v2_complete,10,1.0,1.0,1.3203086832001645,2.334863739400088,0.9,1.0,0.0,1.0,1.0,1.0,0.0
+v3_internal_verification,10,1.0,1.0,0.7391735543000323,1.238848879499755,0.9,1.0,0.0,1.0,1.0,1.0,0.0

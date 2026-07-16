@@ -1,0 +1,301 @@
+complaint_id,complaint_text,expected_branch,expected_severity,expected_escalate_to_human
+C001,Como actualizo la direccion registrada en mi poliza de hogar? Quedo al pendiente de sus comentarios.,home,1,False
+C002,URGENTE: Necesito una constancia de vigencia de mi seguro de vida.,life,1,False
+C003,Quiero conocer el estatus de mi reclamacion por el danio en la cocina.,home,1,False
+C004,Creo que el ajustador altero el reporte del accidente para reducir el pago. Sospecho un fraude.,auto,3,True
+C005,"No me han entregado el pago del seguro de vida de mi esposo, que fallecio hace tres meses.",life,3,True
+C006,Que documentos necesito para agregar a mi esposa como beneficiaria?,life,1,False
+C007,URGENTE: El robo en mi casa fue hace un mes y el pago sigue detenido sin justificacion.,home,2,False
+C008,El hospital no reconoce mi poliza y necesito una cirugia urgente. Espero una respuesta pronta.,medical_expenses,3,True
+C009,Rechazaron las fotos del choque sin explicarme por que y el taller no puede avanzar.,auto,2,False
+C010,Buenas tardes. El proveedor que mando la aseguradora me pidio dinero en efectivo para agilizar el tramite; parece un fraude.,home,3,True
+C011,"Soy viuda, dependo del pago del seguro de vida y llevan medio anio sin resolver.",life,3,True
+C012,Rechazaron las fotos del choque sin explicarme por que y el taller no puede avanzar. Quedo al pendiente de sus comentarios.,auto,2,False
+C013,Estoy muy inconforme con el servicio. Reporte una fuga de agua y nadie ha visitado mi domicilio en dos semanas. Esta situacion no puede seguir asi.,home,2,False
+C014,"URGENTE: yevo un mes sin q me autoricen la reparacion de mi coche, nadie contesta el telefono",auto,2,False
+C015,reporte el robo en mi casa ase 15 dias y no e recibido ninguna llamada Espero una respuesta pronta.,home,2,False
+C016,Estoy muy inconforme con el servicio. reporte el robo en mi casa ase 15 dias y no e recibido ninguna llamada Esta situacion no puede seguir asi.,home,2,False
+C017,"Soy viuda, dependo del pago del seguro de vida y llevan medio anio sin resolver. Quedo al pendiente de sus comentarios.",life,3,True
+C018,Mi casa sufrio danios graves por un incendio y no tenemos donde dormir. Quedo al pendiente de sus comentarios.,home,3,True
+C019,Estoy muy inconforme con el servicio. El hospital no reconoce mi poliza y necesito una cirugia urgente. Esta situacion no puede seguir asi.,medical_expenses,3,True
+C020,Buenas tardes. Quiero conocer el estatus de mi reclamacion por el danio en la cocina.,home,1,False
+C021,Mi reembolso de gastos medicos lleva dos meses en revision sin respuesta.,medical_expenses,2,False
+C022,"Soy adulto mayor, dependo de mi oxigeno y la aseguradora suspendio el pago del equipo. Espero una respuesta pronta.",medical_expenses,3,True
+C023,Buenas tardes. Rechazaron el pago del seguro de vida alegando una enfermedad preexistente que nunca existio.,life,3,True
+C024,"Buenas tardes. Soy viuda, dependo del pago del seguro de vida y llevan medio anio sin resolver.",life,3,True
+C025,Mi reembolso de gastos medicos lleva dos meses en revision sin respuesta. Espero una respuesta pronta.,medical_expenses,2,False
+C026,URGENTE: Llevo tres semanas esperando el dictamen de mi automovil y nadie me da respuesta.,auto,2,False
+C027,Me duplicaron el cobro de la prima de mi seguro de vida. Quedo al pendiente de sus comentarios.,life,2,False
+C028,Estoy muy inconforme con el servicio. solisite mi constancia del seguro de vida ase un mes y no llega Esta situacion no puede seguir asi.,life,2,False
+C029,El robo en mi casa fue hace un mes y el pago sigue detenido sin justificacion.,home,2,False
+C030,Buenas tardes. Quiero actualizar los beneficiarios de mi poliza de vida.,life,1,False
+C031,Buenas tardes. Me cobraron dos veces la prima de mi seguro de auto y no me devuelven el cargo duplicado.,auto,2,False
+C032,Buenas tardes. Como actualizo la direccion registrada en mi poliza de hogar?,home,1,False
+C033,Es la cuarta vez que reporto el mismo problema con la reparacion de mi auto y nadie lo resuelve. Espero una respuesta pronta.,auto,2,True
+C034,Buenas tardes. La aseguradora se niega a cubrir la perdida total de mi auto; son mas de 400 mil pesos.,auto,3,True
+C035,Estoy muy inconforme con el servicio. Necesito saber que documento falta para completar el tramite de mi seguro de hogar. Esta situacion no puede seguir asi.,home,1,False
+C036,URGENTE: Me cobraron un deducible que no corresponde a mi plan de gastos medicos.,medical_expenses,2,False
+C037,Es la cuarta vez que reporto el mismo problema con la reparacion de mi auto y nadie lo resuelve.,auto,2,True
+C038,Buenas tardes. Necesito una copia de mi tabulador de honorarios medicos.,medical_expenses,1,False
+C039,URGENTE: Es la cuarta vez que reporto el mismo problema con la reparacion de mi auto y nadie lo resuelve.,auto,2,True
+C040,"Estoy muy inconforme con el servicio. Llevo un mes esperando el pago de la reparacion. Si hoy no tengo respuesta, presentare una demanda. Esta situacion no puede seguir asi.",auto,3,True
+C041,Buenas tardes. Me cobraron un deducible que no corresponde a mi plan de gastos medicos.,medical_expenses,2,False
+C042,Quiero saber el estatus de mi solicitud de reembolso medico.,medical_expenses,1,False
+C043,La aseguradora niega el pago del seguro de vida de mi madre; ya contrate un abogado para demandar. Quedo al pendiente de sus comentarios.,life,3,True
+C044,"Llevo un mes esperando el pago de la reparacion. Si hoy no tengo respuesta, presentare una demanda. Quedo al pendiente de sus comentarios.",auto,3,True
+C045,Necesito una copia de mi tabulador de honorarios medicos.,medical_expenses,1,False
+C046,La aseguradora se niega a cubrir la perdida total de mi auto; son mas de 400 mil pesos. Quedo al pendiente de sus comentarios.,auto,3,True
+C047,La aseguradora niega el pago del seguro de vida de mi madre; ya contrate un abogado para demandar.,life,3,True
+C048,Me duplicaron el cobro de la prima de mi seguro de vida.,life,2,False
+C049,"Si no autorizan la operacion de mi hija esta semana, procedere legalmente contra la aseguradora. Espero una respuesta pronta.",medical_expenses,3,True
+C050,El asesor no me ha enviado el endoso de mi poliza de vida que prometio hace semanas.,life,2,False
+C051,El ajustador cancelo tres veces la visita para evaluar los danios del techo. Espero una respuesta pronta.,home,2,False
+C052,Estoy muy inconforme con el servicio. Rechazaron mi factura del laboratorio sin darme ninguna explicacion. Esta situacion no puede seguir asi.,medical_expenses,2,False
+C053,Buenas tardes. Que documentos necesito para agregar a mi esposa como beneficiaria?,life,1,False
+C054,Me pueden confirmar si mi poliza de gastos medicos cubre consultas de nutricion?,medical_expenses,1,False
+C055,Estoy muy inconforme con el servicio. He llamado seis veces para el tramite del seguro de vida de mi hermano y nadie da seguimiento. Esta situacion no puede seguir asi.,life,2,True
+C056,Que documentos necesito para agregar a mi esposa como beneficiaria? Quedo al pendiente de sus comentarios.,life,1,False
+C057,Buenas tardes. Negaron la autorizacion de mi quimioterapia y mi tratamiento no puede esperar.,medical_expenses,3,True
+C058,Buenas tardes. Rechazaron mi factura del laboratorio sin darme ninguna explicacion.,medical_expenses,2,False
+C059,URGENTE: Reporte una fuga de agua y nadie ha visitado mi domicilio en dos semanas.,home,2,False
+C060,Buenas tardes. Mi automovil fue impactado cuando me dirigia al hospital y ademas no quieren cubrir los gastos medicos del accidente.,auto,2,True
+C061,He llamado seis veces para el tramite del seguro de vida de mi hermano y nadie da seguimiento.,life,2,True
+C062,Es la cuarta vez que reporto el mismo problema con la reparacion de mi auto y nadie lo resuelve. Quedo al pendiente de sus comentarios.,auto,2,True
+C063,"yevo un mes sin q me autoricen la reparacion de mi coche, nadie contesta el telefono",auto,2,False
+C064,Mi casa sufrio danios graves por un incendio y no tenemos donde dormir. Espero una respuesta pronta.,home,3,True
+C065,"Buenas tardes. Si no cubren el danio estructural de mi casa, mi abogado presentara una demanda esta semana.",home,3,True
+C066,Me cobraron dos veces la prima de mi seguro de auto y no me devuelven el cargo duplicado. Espero una respuesta pronta.,auto,2,False
+C067,Buenas tardes. Creo que el ajustador altero el reporte del accidente para reducir el pago. Sospecho un fraude.,auto,3,True
+C068,solisite mi constancia del seguro de vida ase un mes y no llega Espero una respuesta pronta.,life,2,False
+C069,Me cobraron dos veces la prima de mi seguro de auto y no me devuelven el cargo duplicado. Quedo al pendiente de sus comentarios.,auto,2,False
+C070,"Si no cubren el danio estructural de mi casa, mi abogado presentara una demanda esta semana. Espero una respuesta pronta.",home,3,True
+C071,Es la tercera vez que envio la misma documentacion medica y siempre la pierden. Espero una respuesta pronta.,medical_expenses,2,True
+C072,"URGENTE: Soy adulto mayor, dependo de mi oxigeno y la aseguradora suspendio el pago del equipo.",medical_expenses,3,True
+C073,solisite mi constancia del seguro de vida ase un mes y no llega,life,2,False
+C074,URGENTE: El ajustador cancelo tres veces la visita para evaluar los danios del techo.,home,2,False
+C075,Necesito una copia de mi tabulador de honorarios medicos. Quedo al pendiente de sus comentarios.,medical_expenses,1,False
+C076,solisite mi constancia del seguro de vida ase un mes y no llega Quedo al pendiente de sus comentarios.,life,2,False
+C077,Es la tercera vez que envio la misma documentacion medica y siempre la pierden.,medical_expenses,2,True
+C078,Negaron la autorizacion de mi quimioterapia y mi tratamiento no puede esperar.,medical_expenses,3,True
+C079,Estoy muy inconforme con el servicio. Que documento falta para completar el tramite de mi seguro de auto? Esta situacion no puede seguir asi.,auto,1,False
+C080,Rechazaron el pago del seguro de vida alegando una enfermedad preexistente que nunca existio. Quedo al pendiente de sus comentarios.,life,3,True
+C081,Buenas tardes. Necesito saber que documento falta para completar el tramite de mi seguro de hogar.,home,1,False
+C082,El ajustador cancelo tres veces la visita para evaluar los danios del techo.,home,2,False
+C083,"Buenas tardes. yevo un mes sin q me autoricen la reparacion de mi coche, nadie contesta el telefono",auto,2,False
+C084,"URGENTE: Si no autorizan la operacion de mi hija esta semana, procedere legalmente contra la aseguradora.",medical_expenses,3,True
+C085,Rechazaron mi factura del laboratorio sin darme ninguna explicacion.,medical_expenses,2,False
+C086,URGENTE: Me pueden confirmar si mi poliza de gastos medicos cubre consultas de nutricion?,medical_expenses,1,False
+C087,URGENTE: Rechazaron mi factura del laboratorio sin darme ninguna explicacion.,medical_expenses,2,False
+C088,Estoy muy inconforme con el servicio. Es la cuarta vez que reporto el mismo problema con la reparacion de mi auto y nadie lo resuelve. Esta situacion no puede seguir asi.,auto,2,True
+C089,Buenas tardes. Necesito corregir el numero de placas registrado en mi poliza de auto.,auto,1,False
+C090,El taller autorizado entrego mi auto con los frenos fallando y casi choco en la autopista.,auto,3,True
+C091,URGENTE: Me estan cobrando una prima distinta a la contratada en mi seguro de casa.,home,2,False
+C092,Me pueden confirmar si mi poliza de gastos medicos cubre consultas de nutricion? Espero una respuesta pronta.,medical_expenses,1,False
+C093,Estoy muy inconforme con el servicio. Llevo tres semanas esperando el dictamen de mi automovil y nadie me da respuesta. Esta situacion no puede seguir asi.,auto,2,False
+C094,Estoy muy inconforme con el servicio. Mi casa sufrio danios graves por un incendio y no tenemos donde dormir. Esta situacion no puede seguir asi.,home,3,True
+C095,La aseguradora se niega a cubrir la perdida total de mi auto; son mas de 400 mil pesos. Espero una respuesta pronta.,auto,3,True
+C096,Buenas tardes. Llevo tres semanas esperando el dictamen de mi automovil y nadie me da respuesta.,auto,2,False
+C097,Reporte una fuga de agua y nadie ha visitado mi domicilio en dos semanas. Espero una respuesta pronta.,home,2,False
+C098,Estoy muy inconforme con el servicio. Es la tercera vez que envio la misma documentacion medica y siempre la pierden. Esta situacion no puede seguir asi.,medical_expenses,2,True
+C099,URGENTE: Alguien cobro el seguro de vida de mi padre falsificando mi firma.,life,3,True
+C100,Estoy muy inconforme con el servicio. Necesito corregir el numero de placas registrado en mi poliza de auto. Esta situacion no puede seguir asi.,auto,1,False
+C101,El cambio de beneficiarios que solicite hace un mes sigue sin aplicarse.,life,2,False
+C102,Estoy muy inconforme con el servicio. Me cobraron dos veces la prima de mi seguro de auto y no me devuelven el cargo duplicado. Esta situacion no puede seguir asi.,auto,2,False
+C103,Rechazaron las fotos del choque sin explicarme por que y el taller no puede avanzar. Espero una respuesta pronta.,auto,2,False
+C104,El robo en mi casa fue hace un mes y el pago sigue detenido sin justificacion. Espero una respuesta pronta.,home,2,False
+C105,URGENTE: Que documentos necesito para agregar a mi esposa como beneficiaria?,life,1,False
+C106,Quiero actualizar los beneficiarios de mi poliza de vida.,life,1,False
+C107,Estoy muy inconforme con el servicio. Me pueden confirmar si mi poliza de gastos medicos cubre consultas de nutricion? Esta situacion no puede seguir asi.,medical_expenses,1,False
+C108,Buenas tardes. Rechazaron las fotos del choque sin explicarme por que y el taller no puede avanzar.,auto,2,False
+C109,Me estan cobrando una prima distinta a la contratada en mi seguro de casa. Espero una respuesta pronta.,home,2,False
+C110,Buenas tardes. El hospital no reconoce mi poliza y necesito una cirugia urgente.,medical_expenses,3,True
+C111,Me cobraron un deducible que no corresponde a mi plan de gastos medicos. Quedo al pendiente de sus comentarios.,medical_expenses,2,False
+C112,Rechazaron el pago del seguro de vida alegando una enfermedad preexistente que nunca existio. Espero una respuesta pronta.,life,3,True
+C113,Recibi por error el expediente medico de otro paciente; mis datos tambien pueden estar expuestos.,medical_expenses,3,True
+C114,Buenas tardes. Alguien cobro el seguro de vida de mi padre falsificando mi firma.,life,3,True
+C115,Buenas tardes. He llamado seis veces para el tramite del seguro de vida de mi hermano y nadie da seguimiento.,life,2,True
+C116,URGENTE: Necesito una copia de mi tabulador de honorarios medicos.,medical_expenses,1,False
+C117,"Estoy muy inconforme con el servicio. llevo semanas esperando q me reembolsen los estudios, nadien me da informacion Esta situacion no puede seguir asi.",medical_expenses,2,False
+C118,Estoy muy inconforme con el servicio. Necesito una constancia de vigencia de mi seguro de vida. Esta situacion no puede seguir asi.,life,1,False
+C119,URGENTE: Llevo cinco reportes por la misma filtracion y sigue sin resolverse.,home,2,True
+C120,El ajustador cancelo tres veces la visita para evaluar los danios del techo. Quedo al pendiente de sus comentarios.,home,2,False
+C121,Llevo tres semanas esperando el dictamen de mi automovil y nadie me da respuesta. Quedo al pendiente de sus comentarios.,auto,2,False
+C122,Buenas tardes. Mi casa sufrio danios graves por un incendio y no tenemos donde dormir.,home,3,True
+C123,Llevo cinco reportes por la misma filtracion y sigue sin resolverse. Espero una respuesta pronta.,home,2,True
+C124,Buenas tardes. El ajustador cancelo tres veces la visita para evaluar los danios del techo.,home,2,False
+C125,"Soy adulto mayor, dependo de mi oxigeno y la aseguradora suspendio el pago del equipo. Quedo al pendiente de sus comentarios.",medical_expenses,3,True
+C126,Necesito una constancia de vigencia de mi seguro de vida. Espero una respuesta pronta.,life,1,False
+C127,Mi automovil fue impactado cuando me dirigia al hospital y ademas no quieren cubrir los gastos medicos del accidente. Espero una respuesta pronta.,auto,2,True
+C128,URGENTE: Recibi por error el expediente medico de otro paciente; mis datos tambien pueden estar expuestos.,medical_expenses,3,True
+C129,URGENTE: reporte el robo en mi casa ase 15 dias y no e recibido ninguna llamada,home,2,False
+C130,El asesor no me ha enviado el endoso de mi poliza de vida que prometio hace semanas. Quedo al pendiente de sus comentarios.,life,2,False
+C131,"Si no autorizan la operacion de mi hija esta semana, procedere legalmente contra la aseguradora. Quedo al pendiente de sus comentarios.",medical_expenses,3,True
+C132,Recibi por error el expediente medico de otro paciente; mis datos tambien pueden estar expuestos. Espero una respuesta pronta.,medical_expenses,3,True
+C133,Buenas tardes. Me estan cobrando una prima distinta a la contratada en mi seguro de casa.,home,2,False
+C134,URGENTE: Mi reembolso de gastos medicos lleva dos meses en revision sin respuesta.,medical_expenses,2,False
+C135,Quiero actualizar los beneficiarios de mi poliza de vida. Quedo al pendiente de sus comentarios.,life,1,False
+C136,URGENTE: He llamado seis veces para el tramite del seguro de vida de mi hermano y nadie da seguimiento.,life,2,True
+C137,Me estan cobrando una prima distinta a la contratada en mi seguro de casa.,home,2,False
+C138,Necesito saber que documento falta para completar el tramite de mi seguro de hogar. Espero una respuesta pronta.,home,1,False
+C139,Quiero conocer el estatus de mi reclamacion por el danio en la cocina. Espero una respuesta pronta.,home,1,False
+C140,Necesito corregir el numero de placas registrado en mi poliza de auto.,auto,1,False
+C141,URGENTE: Quiero saber el estatus de mi solicitud de reembolso medico.,medical_expenses,1,False
+C142,Estoy muy inconforme con el servicio. Mi reembolso de gastos medicos lleva dos meses en revision sin respuesta. Esta situacion no puede seguir asi.,medical_expenses,2,False
+C143,Como actualizo la direccion registrada en mi poliza de hogar? Espero una respuesta pronta.,home,1,False
+C144,"URGENTE: llevo semanas esperando q me reembolsen los estudios, nadien me da informacion",medical_expenses,2,False
+C145,Llevo cinco reportes por la misma filtracion y sigue sin resolverse. Quedo al pendiente de sus comentarios.,home,2,True
+C146,La aseguradora niega el pago del seguro de vida de mi madre; ya contrate un abogado para demandar. Espero una respuesta pronta.,life,3,True
+C147,Me pueden confirmar si mi poliza de gastos medicos cubre consultas de nutricion? Quedo al pendiente de sus comentarios.,medical_expenses,1,False
+C148,Estoy muy inconforme con el servicio. Creo que el ajustador altero el reporte del accidente para reducir el pago. Sospecho un fraude. Esta situacion no puede seguir asi.,auto,3,True
+C149,Llevo tres semanas esperando el dictamen de mi automovil y nadie me da respuesta. Espero una respuesta pronta.,auto,2,False
+C150,El hospital no reconoce mi poliza y necesito una cirugia urgente.,medical_expenses,3,True
+C151,URGENTE: solisite mi constancia del seguro de vida ase un mes y no llega,life,2,False
+C152,"llevo semanas esperando q me reembolsen los estudios, nadien me da informacion Espero una respuesta pronta.",medical_expenses,2,False
+C153,Estoy muy inconforme con el servicio. Llevo cinco reportes por la misma filtracion y sigue sin resolverse. Esta situacion no puede seguir asi.,home,2,True
+C154,Llevo cinco reportes por la misma filtracion y sigue sin resolverse.,home,2,True
+C155,El cambio de beneficiarios que solicite hace un mes sigue sin aplicarse. Quedo al pendiente de sus comentarios.,life,2,False
+C156,"Buenas tardes. No me han entregado el pago del seguro de vida de mi esposo, que fallecio hace tres meses.",life,3,True
+C157,Estoy muy inconforme con el servicio. El robo en mi casa fue hace un mes y el pago sigue detenido sin justificacion. Esta situacion no puede seguir asi.,home,2,False
+C158,Estoy muy inconforme con el servicio. Quiero saber el estatus del dictamen de mi automovil. Esta situacion no puede seguir asi.,auto,1,False
+C159,URGENTE: Mi casa sufrio danios graves por un incendio y no tenemos donde dormir.,home,3,True
+C160,"Si no autorizan la operacion de mi hija esta semana, procedere legalmente contra la aseguradora.",medical_expenses,3,True
+C161,Despues del sismo mi casa tiene cuarteaduras que la hacen inhabitable y no responden. Quedo al pendiente de sus comentarios.,home,3,True
+C162,Mi casa sufrio danios graves por un incendio y no tenemos donde dormir.,home,3,True
+C163,Mi automovil fue impactado cuando me dirigia al hospital y ademas no quieren cubrir los gastos medicos del accidente.,auto,2,True
+C164,Creo que el ajustador altero el reporte del accidente para reducir el pago. Sospecho un fraude. Espero una respuesta pronta.,auto,3,True
+C165,Necesito corregir el numero de placas registrado en mi poliza de auto. Espero una respuesta pronta.,auto,1,False
+C166,Estoy muy inconforme con el servicio. Necesito una copia de mi tabulador de honorarios medicos. Esta situacion no puede seguir asi.,medical_expenses,1,False
+C167,He llamado seis veces para el tramite del seguro de vida de mi hermano y nadie da seguimiento. Quedo al pendiente de sus comentarios.,life,2,True
+C168,El cambio de beneficiarios que solicite hace un mes sigue sin aplicarse. Espero una respuesta pronta.,life,2,False
+C169,Buenas tardes. El robo en mi casa fue hace un mes y el pago sigue detenido sin justificacion.,home,2,False
+C170,URGENTE: Mi automovil fue impactado cuando me dirigia al hospital y ademas no quieren cubrir los gastos medicos del accidente.,auto,2,True
+C171,Buenas tardes. Es la tercera vez que envio la misma documentacion medica y siempre la pierden.,medical_expenses,2,True
+C172,reporte el robo en mi casa ase 15 dias y no e recibido ninguna llamada Quedo al pendiente de sus comentarios.,home,2,False
+C173,Buenas tardes. La aseguradora niega el pago del seguro de vida de mi madre; ya contrate un abogado para demandar.,life,3,True
+C174,URGENTE: Necesito corregir el numero de placas registrado en mi poliza de auto.,auto,1,False
+C175,Buenas tardes. Quiero saber el estatus de mi solicitud de reembolso medico.,medical_expenses,1,False
+C176,Buenas tardes. El asesor no me ha enviado el endoso de mi poliza de vida que prometio hace semanas.,life,2,False
+C177,Negaron la autorizacion de mi quimioterapia y mi tratamiento no puede esperar. Quedo al pendiente de sus comentarios.,medical_expenses,3,True
+C178,Quiero saber el estatus del dictamen de mi automovil. Espero una respuesta pronta.,auto,1,False
+C179,Estoy muy inconforme con el servicio. El cambio de beneficiarios que solicite hace un mes sigue sin aplicarse. Esta situacion no puede seguir asi.,life,2,False
+C180,Estoy muy inconforme con el servicio. Quiero saber el estatus de mi solicitud de reembolso medico. Esta situacion no puede seguir asi.,medical_expenses,1,False
+C181,URGENTE: Despues del sismo mi casa tiene cuarteaduras que la hacen inhabitable y no responden.,home,3,True
+C182,Quiero saber el estatus del dictamen de mi automovil.,auto,1,False
+C183,URGENTE: Me duplicaron el cobro de la prima de mi seguro de vida.,life,2,False
+C184,"URGENTE: No me han entregado el pago del seguro de vida de mi esposo, que fallecio hace tres meses.",life,3,True
+C185,"Buenas tardes. Soy adulto mayor, dependo de mi oxigeno y la aseguradora suspendio el pago del equipo.",medical_expenses,3,True
+C186,"No me han entregado el pago del seguro de vida de mi esposo, que fallecio hace tres meses. Espero una respuesta pronta.",life,3,True
+C187,Me duplicaron el cobro de la prima de mi seguro de vida. Espero una respuesta pronta.,life,2,False
+C188,Buenas tardes. Llevo cinco reportes por la misma filtracion y sigue sin resolverse.,home,2,True
+C189,"Buenas tardes. Si no autorizan la operacion de mi hija esta semana, procedere legalmente contra la aseguradora.",medical_expenses,3,True
+C190,El taller autorizado entrego mi auto con los frenos fallando y casi choco en la autopista. Espero una respuesta pronta.,auto,3,True
+C191,Creo que el ajustador altero el reporte del accidente para reducir el pago. Sospecho un fraude. Quedo al pendiente de sus comentarios.,auto,3,True
+C192,Necesito saber que documento falta para completar el tramite de mi seguro de hogar.,home,1,False
+C193,Rechazaron el pago del seguro de vida alegando una enfermedad preexistente que nunca existio.,life,3,True
+C194,Necesito saber que documento falta para completar el tramite de mi seguro de hogar. Quedo al pendiente de sus comentarios.,home,1,False
+C195,Buenas tardes. Me duplicaron el cobro de la prima de mi seguro de vida.,life,2,False
+C196,La aseguradora se niega a cubrir la perdida total de mi auto; son mas de 400 mil pesos.,auto,3,True
+C197,Estoy muy inconforme con el servicio. El asesor no me ha enviado el endoso de mi poliza de vida que prometio hace semanas. Esta situacion no puede seguir asi.,life,2,False
+C198,URGENTE: El cambio de beneficiarios que solicite hace un mes sigue sin aplicarse.,life,2,False
+C199,Que documento falta para completar el tramite de mi seguro de auto? Espero una respuesta pronta.,auto,1,False
+C200,Estoy muy inconforme con el servicio. El ajustador cancelo tres veces la visita para evaluar los danios del techo. Esta situacion no puede seguir asi.,home,2,False
+C201,Me cobraron dos veces la prima de mi seguro de auto y no me devuelven el cargo duplicado.,auto,2,False
+C202,URGENTE: El hospital no reconoce mi poliza y necesito una cirugia urgente.,medical_expenses,3,True
+C203,"yevo un mes sin q me autoricen la reparacion de mi coche, nadie contesta el telefono Espero una respuesta pronta.",auto,2,False
+C204,Quiero conocer el estatus de mi reclamacion por el danio en la cocina. Quedo al pendiente de sus comentarios.,home,1,False
+C205,El proveedor que mando la aseguradora me pidio dinero en efectivo para agilizar el tramite; parece un fraude.,home,3,True
+C206,El robo en mi casa fue hace un mes y el pago sigue detenido sin justificacion. Quedo al pendiente de sus comentarios.,home,2,False
+C207,"No me han entregado el pago del seguro de vida de mi esposo, que fallecio hace tres meses. Quedo al pendiente de sus comentarios.",life,3,True
+C208,Recibi por error el expediente medico de otro paciente; mis datos tambien pueden estar expuestos. Quedo al pendiente de sus comentarios.,medical_expenses,3,True
+C209,El taller autorizado entrego mi auto con los frenos fallando y casi choco en la autopista. Quedo al pendiente de sus comentarios.,auto,3,True
+C210,El hospital no reconoce mi poliza y necesito una cirugia urgente. Quedo al pendiente de sus comentarios.,medical_expenses,3,True
+C211,Quiero saber el estatus de mi solicitud de reembolso medico. Quedo al pendiente de sus comentarios.,medical_expenses,1,False
+C212,Estoy muy inconforme con el servicio. Quiero actualizar los beneficiarios de mi poliza de vida. Esta situacion no puede seguir asi.,life,1,False
+C213,"Llevo un mes esperando el pago de la reparacion. Si hoy no tengo respuesta, presentare una demanda.",auto,3,True
+C214,Estoy muy inconforme con el servicio. Rechazaron las fotos del choque sin explicarme por que y el taller no puede avanzar. Esta situacion no puede seguir asi.,auto,2,False
+C215,URGENTE: Quiero actualizar los beneficiarios de mi poliza de vida.,life,1,False
+C216,Mi automovil fue impactado cuando me dirigia al hospital y ademas no quieren cubrir los gastos medicos del accidente. Quedo al pendiente de sus comentarios.,auto,2,True
+C217,URGENTE: Rechazaron las fotos del choque sin explicarme por que y el taller no puede avanzar.,auto,2,False
+C218,Necesito una constancia de vigencia de mi seguro de vida. Quedo al pendiente de sus comentarios.,life,1,False
+C219,reporte el robo en mi casa ase 15 dias y no e recibido ninguna llamada,home,2,False
+C220,URGENTE: Que documento falta para completar el tramite de mi seguro de auto?,auto,1,False
+C221,URGENTE: Negaron la autorizacion de mi quimioterapia y mi tratamiento no puede esperar.,medical_expenses,3,True
+C222,URGENTE: Rechazaron el pago del seguro de vida alegando una enfermedad preexistente que nunca existio.,life,3,True
+C223,Estoy muy inconforme con el servicio. Como actualizo la direccion registrada en mi poliza de hogar? Esta situacion no puede seguir asi.,home,1,False
+C224,Reporte una fuga de agua y nadie ha visitado mi domicilio en dos semanas.,home,2,False
+C225,Buenas tardes. El taller autorizado entrego mi auto con los frenos fallando y casi choco en la autopista.,auto,3,True
+C226,Alguien cobro el seguro de vida de mi padre falsificando mi firma. Espero una respuesta pronta.,life,3,True
+C227,Negaron la autorizacion de mi quimioterapia y mi tratamiento no puede esperar. Espero una respuesta pronta.,medical_expenses,3,True
+C228,"llevo semanas esperando q me reembolsen los estudios, nadien me da informacion",medical_expenses,2,False
+C229,Me estan cobrando una prima distinta a la contratada en mi seguro de casa. Quedo al pendiente de sus comentarios.,home,2,False
+C230,"Si no cubren el danio estructural de mi casa, mi abogado presentara una demanda esta semana. Quedo al pendiente de sus comentarios.",home,3,True
+C231,URGENTE: Quiero saber el estatus del dictamen de mi automovil.,auto,1,False
+C232,Buenas tardes. Necesito una constancia de vigencia de mi seguro de vida.,life,1,False
+C233,Estoy muy inconforme con el servicio. Que documentos necesito para agregar a mi esposa como beneficiaria? Esta situacion no puede seguir asi.,life,1,False
+C234,He llamado seis veces para el tramite del seguro de vida de mi hermano y nadie da seguimiento. Espero una respuesta pronta.,life,2,True
+C235,"URGENTE: Si no cubren el danio estructural de mi casa, mi abogado presentara una demanda esta semana.",home,3,True
+C236,Buenas tardes. Que documento falta para completar el tramite de mi seguro de auto?,auto,1,False
+C237,"URGENTE: Llevo un mes esperando el pago de la reparacion. Si hoy no tengo respuesta, presentare una demanda.",auto,3,True
+C238,"Buenas tardes. llevo semanas esperando q me reembolsen los estudios, nadien me da informacion",medical_expenses,2,False
+C239,"Soy viuda, dependo del pago del seguro de vida y llevan medio anio sin resolver. Espero una respuesta pronta.",life,3,True
+C240,Necesito una constancia de vigencia de mi seguro de vida.,life,1,False
+C241,URGENTE: La aseguradora niega el pago del seguro de vida de mi madre; ya contrate un abogado para demandar.,life,3,True
+C242,URGENTE: El proveedor que mando la aseguradora me pidio dinero en efectivo para agilizar el tramite; parece un fraude.,home,3,True
+C243,Despues del sismo mi casa tiene cuarteaduras que la hacen inhabitable y no responden.,home,3,True
+C244,URGENTE: Me cobraron dos veces la prima de mi seguro de auto y no me devuelven el cargo duplicado.,auto,2,False
+C245,Estoy muy inconforme con el servicio. Quiero conocer el estatus de mi reclamacion por el danio en la cocina. Esta situacion no puede seguir asi.,home,1,False
+C246,Estoy muy inconforme con el servicio. Me cobraron un deducible que no corresponde a mi plan de gastos medicos. Esta situacion no puede seguir asi.,medical_expenses,2,False
+C247,URGENTE: Como actualizo la direccion registrada en mi poliza de hogar?,home,1,False
+C248,Estoy muy inconforme con el servicio. Me estan cobrando una prima distinta a la contratada en mi seguro de casa. Esta situacion no puede seguir asi.,home,2,False
+C249,Quiero actualizar los beneficiarios de mi poliza de vida. Espero una respuesta pronta.,life,1,False
+C250,Llevo tres semanas esperando el dictamen de mi automovil y nadie me da respuesta.,auto,2,False
+C251,Rechazaron mi factura del laboratorio sin darme ninguna explicacion. Espero una respuesta pronta.,medical_expenses,2,False
+C252,Que documento falta para completar el tramite de mi seguro de auto? Quedo al pendiente de sus comentarios.,auto,1,False
+C253,"llevo semanas esperando q me reembolsen los estudios, nadien me da informacion Quedo al pendiente de sus comentarios.",medical_expenses,2,False
+C254,Que documento falta para completar el tramite de mi seguro de auto?,auto,1,False
+C255,Rechazaron mi factura del laboratorio sin darme ninguna explicacion. Quedo al pendiente de sus comentarios.,medical_expenses,2,False
+C256,Necesito una copia de mi tabulador de honorarios medicos. Espero una respuesta pronta.,medical_expenses,1,False
+C257,URGENTE: El taller autorizado entrego mi auto con los frenos fallando y casi choco en la autopista.,auto,3,True
+C258,Me cobraron un deducible que no corresponde a mi plan de gastos medicos.,medical_expenses,2,False
+C259,Reporte una fuga de agua y nadie ha visitado mi domicilio en dos semanas. Quedo al pendiente de sus comentarios.,home,2,False
+C260,"Llevo un mes esperando el pago de la reparacion. Si hoy no tengo respuesta, presentare una demanda. Espero una respuesta pronta.",auto,3,True
+C261,Buenas tardes. Mi reembolso de gastos medicos lleva dos meses en revision sin respuesta.,medical_expenses,2,False
+C262,Quiero saber el estatus del dictamen de mi automovil. Quedo al pendiente de sus comentarios.,auto,1,False
+C263,Buenas tardes. El cambio de beneficiarios que solicite hace un mes sigue sin aplicarse.,life,2,False
+C264,Buenas tardes. Quiero saber el estatus del dictamen de mi automovil.,auto,1,False
+C265,Buenas tardes. Me pueden confirmar si mi poliza de gastos medicos cubre consultas de nutricion?,medical_expenses,1,False
+C266,Buenas tardes. Reporte una fuga de agua y nadie ha visitado mi domicilio en dos semanas.,home,2,False
+C267,Estoy muy inconforme con el servicio. Me duplicaron el cobro de la prima de mi seguro de vida. Esta situacion no puede seguir asi.,life,2,False
+C268,Es la tercera vez que envio la misma documentacion medica y siempre la pierden. Quedo al pendiente de sus comentarios.,medical_expenses,2,True
+C269,Alguien cobro el seguro de vida de mi padre falsificando mi firma. Quedo al pendiente de sus comentarios.,life,3,True
+C270,Buenas tardes. solisite mi constancia del seguro de vida ase un mes y no llega,life,2,False
+C271,Necesito corregir el numero de placas registrado en mi poliza de auto. Quedo al pendiente de sus comentarios.,auto,1,False
+C272,URGENTE: La aseguradora se niega a cubrir la perdida total de mi auto; son mas de 400 mil pesos.,auto,3,True
+C273,Buenas tardes. Despues del sismo mi casa tiene cuarteaduras que la hacen inhabitable y no responden.,home,3,True
+C274,URGENTE: Necesito saber que documento falta para completar el tramite de mi seguro de hogar.,home,1,False
+C275,"Estoy muy inconforme con el servicio. No me han entregado el pago del seguro de vida de mi esposo, que fallecio hace tres meses. Esta situacion no puede seguir asi.",life,3,True
+C276,Despues del sismo mi casa tiene cuarteaduras que la hacen inhabitable y no responden. Espero una respuesta pronta.,home,3,True
+C277,Buenas tardes. reporte el robo en mi casa ase 15 dias y no e recibido ninguna llamada,home,2,False
+C278,"yevo un mes sin q me autoricen la reparacion de mi coche, nadie contesta el telefono Quedo al pendiente de sus comentarios.",auto,2,False
+C279,URGENTE: Creo que el ajustador altero el reporte del accidente para reducir el pago. Sospecho un fraude.,auto,3,True
+C280,Alguien cobro el seguro de vida de mi padre falsificando mi firma.,life,3,True
+C281,Que documentos necesito para agregar a mi esposa como beneficiaria? Espero una respuesta pronta.,life,1,False
+C282,"Buenas tardes. Llevo un mes esperando el pago de la reparacion. Si hoy no tengo respuesta, presentare una demanda.",auto,3,True
+C283,"Si no cubren el danio estructural de mi casa, mi abogado presentara una demanda esta semana.",home,3,True
+C284,"URGENTE: Soy viuda, dependo del pago del seguro de vida y llevan medio anio sin resolver.",life,3,True
+C285,URGENTE: Quiero conocer el estatus de mi reclamacion por el danio en la cocina.,home,1,False
+C286,El asesor no me ha enviado el endoso de mi poliza de vida que prometio hace semanas. Espero una respuesta pronta.,life,2,False
+C287,Estoy muy inconforme con el servicio. Negaron la autorizacion de mi quimioterapia y mi tratamiento no puede esperar. Esta situacion no puede seguir asi.,medical_expenses,3,True
+C288,Mi reembolso de gastos medicos lleva dos meses en revision sin respuesta. Quedo al pendiente de sus comentarios.,medical_expenses,2,False
+C289,Como actualizo la direccion registrada en mi poliza de hogar?,home,1,False
+C290,Buenas tardes. Recibi por error el expediente medico de otro paciente; mis datos tambien pueden estar expuestos.,medical_expenses,3,True
+C291,"Soy adulto mayor, dependo de mi oxigeno y la aseguradora suspendio el pago del equipo.",medical_expenses,3,True
+C292,El proveedor que mando la aseguradora me pidio dinero en efectivo para agilizar el tramite; parece un fraude. Quedo al pendiente de sus comentarios.,home,3,True
+C293,URGENTE: Es la tercera vez que envio la misma documentacion medica y siempre la pierden.,medical_expenses,2,True
+C294,Estoy muy inconforme con el servicio. La aseguradora niega el pago del seguro de vida de mi madre; ya contrate un abogado para demandar. Esta situacion no puede seguir asi.,life,3,True
+C295,Buenas tardes. Es la cuarta vez que reporto el mismo problema con la reparacion de mi auto y nadie lo resuelve.,auto,2,True
+C296,El proveedor que mando la aseguradora me pidio dinero en efectivo para agilizar el tramite; parece un fraude. Espero una respuesta pronta.,home,3,True
+C297,"Estoy muy inconforme con el servicio. yevo un mes sin q me autoricen la reparacion de mi coche, nadie contesta el telefono Esta situacion no puede seguir asi.",auto,2,False
+C298,Me cobraron un deducible que no corresponde a mi plan de gastos medicos. Espero una respuesta pronta.,medical_expenses,2,False
+C299,URGENTE: El asesor no me ha enviado el endoso de mi poliza de vida que prometio hace semanas.,life,2,False
+C300,Quiero saber el estatus de mi solicitud de reembolso medico. Espero una respuesta pronta.,medical_expenses,1,False
