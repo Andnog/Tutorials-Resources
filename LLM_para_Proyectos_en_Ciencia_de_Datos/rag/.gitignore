@@ -1,0 +1,14 @@
+.env
+.venv/
+*.egg-info/
+__pycache__/
+.pytest_cache/
+.ipynb_checkpoints/
+data/processed/*.json
+data/chroma/*
+data/experiments/*
+mlflow.db
+mlruns/
+!data/processed/.gitkeep
+!data/chroma/.gitkeep
+!data/experiments/.gitkeep

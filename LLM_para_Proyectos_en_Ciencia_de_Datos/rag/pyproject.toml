@@ -1,0 +1,59 @@
+[project]
+name = "laundry-manuals-rag"
+version = "0.1.0"
+description = "Sesión 5: RAG reproducible sobre manuales de lavadora."
+requires-python = ">=3.12,<3.13"
+dependencies = [
+  "chromadb>=1.0.0",
+  "google-adk>=1.0.0",
+  "google-genai>=1.0.0",
+  "ipykernel>=6.29.0",
+  "mlflow>=2.20.0",
+  # Unstructured hi_res carga Numba; Numba aún rechaza NumPy 2.5+.
+  "numpy>=1.26.0,<2.5",
+  "pandas>=2.2.0",
+  "pillow>=10.0.0",
+  "pdfplumber>=0.11.0",
+  "pypdf>=5.0.0",
+  "pymupdf>=1.24.0",
+  "pytesseract>=0.3.13",
+  "python-dotenv>=1.0.0",
+  "sentence-transformers>=3.0.0",
+  "streamlit>=1.40.0",
+  "torchvision>=0.28.0",
+  "docling>=2.113.0",
+  "unstructured[pdf]>=0.24.1",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.3.0", "ruff>=0.6.0"]
+
+[build-system]
+requires = ["setuptools>=75"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = [".", "src"]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+extend-exclude = ["notebooks"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP"]
+ignore = ["E501"]
+
+[tool.ruff.lint.per-file-ignores]
+"chatbot/chat.py" = ["E402"]
+"chatbot/pages/1_Laboratorio_de_chunking.py" = ["E402"]
+"chatbot/pages/2_Laboratorio_de_reranking.py" = ["E402"]
+"chatbot/pages/3_Anatomia_del_reranking.py" = ["E402"]
+"chatbot/pages/4_Experimentos_RAG.py" = ["E402"]
+"chatbot/adk_apps/manual_chatbot/agent.py" = ["E402"]
+"experiments/run.py" = ["E402"]
+"tests/test_vectorstore.py" = ["E402"]
