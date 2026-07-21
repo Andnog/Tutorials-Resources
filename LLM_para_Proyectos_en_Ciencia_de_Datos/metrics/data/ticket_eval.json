@@ -1,0 +1,42 @@
+[
+  {
+    "id": "T01", "category": "status", "question": "¿Cuál es el estado, prioridad y problema del ticket TK-1042?",
+    "reference_answer": "TK-1042 está abierto, tiene prioridad media y reporta un tablero eléctrico sin energía.",
+    "expected_decision": "report_status",
+    "evidence": {"ticket_id": "TK-1042", "store_id": "POL-01", "title": "Falla eléctrica", "description": "Tablero eléctrico sin energía", "status": "open", "priority": "medium", "updated_at": "2026-07-05"},
+    "reference_json": {"ticket_id": "TK-1042", "status": "open", "priority": "medium", "description": "Tablero eléctrico sin energía"},
+    "expected_tools": ["get_ticket"], "expected_arguments": {"ticket_id": "TK-1042"}
+  },
+  {
+    "id": "T02", "category": "schedule", "question": "¿Qué visita tiene programada el ticket TK-1043 y quién está asignado?",
+    "reference_answer": "TK-1043 tiene una visita programada para el 16 de julio de 2026 y está asignado al proveedor PV-02.",
+    "expected_decision": "report_schedule",
+    "evidence": {"ticket_id": "TK-1043", "store_id": "POL-01", "title": "Aire acondicionado", "status": "open", "priority": "low", "assigned_provider": "PV-02", "scheduled_date": "2026-07-16"},
+    "reference_json": {"ticket_id": "TK-1043", "assigned_provider": "PV-02", "scheduled_date": "2026-07-16"},
+    "expected_tools": ["get_ticket"], "expected_arguments": {"ticket_id": "TK-1043"}
+  },
+  {
+    "id": "T03", "category": "priority", "question": "¿Cuál es la prioridad y el estado del ticket TK-2001?",
+    "reference_answer": "TK-2001 tiene prioridad alta y está en progreso.",
+    "expected_decision": "report_priority",
+    "evidence": {"ticket_id": "TK-2001", "store_id": "CON-02", "title": "Fuga de agua", "description": "Fuga menor en baño", "status": "in_progress", "priority": "high", "assigned_provider": "PV-03", "scheduled_date": "2026-07-15"},
+    "reference_json": {"ticket_id": "TK-2001", "status": "in_progress", "priority": "high"},
+    "expected_tools": ["get_ticket"], "expected_arguments": {"ticket_id": "TK-2001"}
+  },
+  {
+    "id": "T04", "category": "not_found", "question": "¿Cuál es el estado del ticket TK-9999?",
+    "reference_answer": "No encontré el ticket TK-9999 en el sistema.",
+    "expected_decision": "report_not_found",
+    "evidence": {"ticket_id": "TK-9999", "found": false},
+    "reference_json": {"ticket_id": "TK-9999", "found": false},
+    "expected_tools": [], "expected_arguments": {}
+  },
+  {
+    "id": "T05", "category": "json", "question": "Devuelve un resumen JSON del ticket TK-1042.",
+    "reference_answer": "TK-1042 está abierto y tiene prioridad media.",
+    "expected_decision": "json_summary",
+    "evidence": {"ticket_id": "TK-1042", "status": "open", "priority": "medium", "title": "Falla eléctrica"},
+    "reference_json": {"ticket_id": "TK-1042", "status": "open", "priority": "medium"},
+    "expected_tools": ["get_ticket"], "expected_arguments": {"ticket_id": "TK-1042"}
+  }
+]

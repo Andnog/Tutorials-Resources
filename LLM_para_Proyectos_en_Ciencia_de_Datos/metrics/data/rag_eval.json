@@ -1,0 +1,38 @@
+[
+  {
+    "id": "R01",
+    "category": "direct",
+    "question": "¿Qué ciclo debo elegir para ropa delicada?",
+    "reference_answer": "El panel del modelo 8MWTW1989 incluye el ciclo Ropa delicada.",
+    "answer": "Usa el ciclo Ropa delicada [whirlpool_8mwtw1989_manual_uso_cuidado.pdf, p. 5].",
+    "relevant_pages": [
+      {
+        "source": "whirlpool_8mwtw1989_manual_uso_cuidado.pdf",
+        "page": 5,
+        "pdf_sha256": "da0a14d4596f9927fd797dcaee51a63061997c2ce3c739bb61eff3d91496333e"
+      }
+    ]
+  },
+  {
+    "id": "R02",
+    "category": "retrieval_noise",
+    "question": "¿Qué debo verificar durante la instalación?",
+    "reference_answer": "Verifique mangueras, suministro de agua y nivelación durante la instalación.",
+    "answer": "Revise las mangueras y la nivelación [whirlpool_64658698_manual_usuario.pdf, p. 5].",
+    "relevant_pages": [
+      {
+        "source": "whirlpool_64658698_manual_usuario.pdf",
+        "page": 5,
+        "pdf_sha256": "3a6925b8947611816a60c082df4cee38a0d06bb1d6725a60dcee2108f9b27681"
+      }
+    ]
+  },
+  {
+    "id": "R03",
+    "category": "trap",
+    "question": "¿Cuál es la receta para preparar pan de masa madre?",
+    "reference_answer": "No encontré evidencia suficiente en los manuales.",
+    "answer": "No encontré evidencia suficiente en los manuales.",
+    "relevant_pages": []
+  }
+]
