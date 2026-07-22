@@ -9,6 +9,30 @@ import os
 from typing import Any
 
 from dotenv import load_dotenv
+from ragas.llms.base import InstructorBaseRagasLLM
+
+
+class _AsyncFromSyncRagasLLM(InstructorBaseRagasLLM):
+    """Make Ragas' async metric API work with Gemini's supported sync client.
+
+    ``instructor.from_genai()`` currently accepts ``google.genai.Client`` but
+    not ``google.genai.AsyncClient``. Modern Ragas metrics call ``agenerate()``,
+    so calling the wrapped sync client directly raises a TypeError. Running the
+    synchronous structured-output request in a worker thread gives Ragas the
+    async contract it needs without switching SDKs or blocking Jupyter's loop.
+    Inheriting Ragas' modern base class is required by Collections metrics.
+    """
+
+    def __init__(self, sync_llm: Any) -> None:
+        self._sync_llm = sync_llm
+
+    def generate(self, prompt: str, response_model: Any) -> Any:
+        """Expose the regular Ragas sync interface too."""
+        return self._sync_llm.generate(prompt, response_model)
+
+    async def agenerate(self, prompt: str, response_model: Any) -> Any:
+        """Run Gemini's supported synchronous structured call off the event loop."""
+        return await asyncio.to_thread(self.generate, prompt, response_model)
 
 
 def build_ragas_rows(
@@ -130,13 +154,14 @@ def evaluate_with_ragas(
 
     model = os.getenv("METRICS_JUDGE_MODEL", "gemini-2.5-flash")
     client = genai.Client(api_key=os.environ["GOOGLE_API_KEY"])
-    evaluator_llm = llm_factory(
+    sync_evaluator_llm = llm_factory(
         model,
         provider="google",
         client=client,
         adapter="instructor",
         temperature=0,
     )
+    evaluator_llm = _AsyncFromSyncRagasLLM(sync_evaluator_llm)
     embedding_model = os.getenv("METRICS_EMBEDDING_MODEL", "models/gemini-embedding-001")
     evaluator_embeddings = GoogleEmbeddings(client=client, model=embedding_model)
     metrics = {
